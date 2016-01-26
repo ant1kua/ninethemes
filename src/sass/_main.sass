@@ -1,4 +1,4 @@
-//body
+//general
 body
   font-family: 'Lato'
   font-size: 14px
@@ -6,11 +6,13 @@ body
 //container
 .container
   margin: 0 auto
-  width: 1170px
+  max-width: 1170px
 
 //atom
 .atom
+  padding: 10px
   margin: 20px
+  border: 1px solid #ccc
 
 //newsletter
 .newsletter
@@ -48,6 +50,7 @@ body
 
 //buttons
 .btn
+  display: inline-block
   font-size: 14px
   color: $white
   background-color: $orangeB
@@ -90,6 +93,13 @@ body
       padding: 55px 30px 55px 35px
       z-index: -1
       transform: rotate(-45deg)
+  
+  &_find
+    cursor: pointer
+    display: inline-block
+    width: 180px
+    height: 50px
+    background-image: url(/img/bg-btn.png)
 
 
 
@@ -101,3 +111,47 @@ body
 
   &__action
     margin-top: 21px
+
+//top-menu
+.top-menu
+  background-color: $bgcTop
+  +clr()
+
+  &__left
+    float: left
+
+  &__right
+    float: right
+
+  &__list
+    display: inline-block
+
+  &__el
+    display: inline-block
+    border-right: 1px solid #333
+    &:first-child
+      border-left: 1px solid #333
+
+
+  &__link
+    display: inline-block
+    padding: 12px 20px 13px 20px
+    text-transform: uppercase
+    color: $greyTopT
+    transition: all 0.2s ease-in
+
+    &:hover
+      color: $orangeT
+      .top-menu__count
+        color: $white
+        background-color: $orangeT
+        border-color: $orangeT
+
+  &__count
+    display: inline-block
+    padding: 0 6px 1px 6px
+    margin-left: 9px
+    border: 1px solid #333
+    border-radius: 2px
+    transition: all 0.2s ease-in
+
