@@ -8,15 +8,23 @@ html
     meta(charset="utf-8")
     block title
       title Jade Layout Template
+    // Meta
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="format-detection" content="telephone=no")
+    // Fonts
+    link(rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Lato:800,700,600,500,400,300")
+    link(rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Roboto+Slab:800,700,600,500,400,300")
+    link(rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Roboto:800,700,600,500,400,300")
+    link(rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Playball:800,700,600,500,400,300")
+    // Style
+    link(rel="stylesheet" media="all" href="css/fonts/font-awesome/css/font-awesome.css")
     link(rel="stylesheet" media="all" href="css/style.css")
+    // Script
     script(src="js/app.js")
   body
 
     //BEGIN out
     .out
-      | Just text
       block content
     //END out
     

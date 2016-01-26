@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Title of template</title>
+    <title>Jade Layout Template</title>
     <!-- Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -20,10 +20,24 @@
   <body>
     <!--BEGIN out-->
     <div class="out">
-      <div class="out">
-        <svg class="icon icon-octa">
-          <use xlink:href="#icon-octa"></use>
-        </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsum maxime, tempora deserunt minima suscipit voluptatem possimus ratione inventore eveniet autem esse accusamus eos quibusdam consequuntur quia officiis eum! Et!
+      <div class="container">
+        <div class="atom">
+          <div class="newsletter">
+            <div class="newsletter__in">
+              <h2 class="newsletter__title">NEWSLETTER</h2>
+              <p class="newsletter__descr">Did you know that we ship to over<span>24 different countries</span></p>
+              <form class="subscribe">
+                <div class="subscribe__field">
+                  <input placeholder="Enter your email address" class="input input__black">
+                </div>
+                <div class="subscribe__action">
+                  <button type="submit" class="btn btn_square"><i class="fa fa-envelope"></i>Subscribe</button>
+                </div>
+              </form><span class="btn btn_close">&times;</span>
+            </div>
+          </div>
+        </div>
+        <div class="atom"><span class="btn btn_std">shop now</span></div>
       </div>
     </div>
     <!--END out-->
