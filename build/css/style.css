@@ -31,7 +31,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-a { text-decoration: none; }
+a { cursor: pointer; text-decoration: none; }
 
 body { font-family: "Lato"; font-size: 14px; }
 
@@ -71,6 +71,25 @@ body { font-family: "Lato"; font-size: 14px; }
 .top-menu__link:hover { color: #ee4415; }
 .top-menu__link:hover .top-menu__count { color: #fff; background-color: #ee4415; border-color: #ee4415; }
 .top-menu__count { display: inline-block; padding: 0 6px 1px 6px; margin-left: 9px; border: 1px solid #333; -webkit-border-radius: 2px; border-radius: 2px; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+
+.header { padding-top: 35px; background-color: #1E1E1E; *zoom: 1; }
+.header:after { content: " "; display: table; clear: both; }
+.header__left { float: left; }
+.header__right { float: right; }
+
+.logo__link { display: inline-block; }
+
+.nav { background-color: #1E1E1E; *zoom: 1; }
+.nav:after { content: " "; display: table; clear: both; }
+.nav__list { display: inline-block; float: right; }
+.nav__el { display: inline-block; margin-left: 35px; }
+.nav__link { display: inline-block; font-size: 16px; color: #fff; padding: 5px 0 37px 0; border-bottom: 3px solid transparent; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; text-transform: uppercase; }
+.nav__link:hover { color: #ee4415; border-color: #ee4415; }
+.nav__link_active { color: #ee4415; border-color: #ee4415; }
+
+.search { display: inline-block; color: #777; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.search:hover { color: #fff; }
+.search__ico { position: relative; top: -2px; left: -2px; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 
