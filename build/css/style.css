@@ -96,7 +96,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .search:hover { color: #fff; }
 .search__ico { position: relative; top: -2px; left: -2px; }
 
-.promo { position: relative; width: 100%; max-height: 790px; height: 790px; background-image: url("/img/goshop-1.png"); background-repeat: no-repeat; background-size: cover; }
+.promo { position: relative; width: 100%; max-height: 790px; height: 790px; background-image: url(/ninethemes/build/img/goshop-1.png); background-repeat: no-repeat; background-size: cover; }
 .promo__img { width: 100%; }
 .promo__img_big { width: 550px; height: 270px; }
 .promo__big { position: absolute; bottom: 275px; left: 445px; }
