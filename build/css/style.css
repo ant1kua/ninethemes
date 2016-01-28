@@ -136,7 +136,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .btn-group li { display: inline-block; padding-right: 7px; }
 
 .products { margin-top: 55px; }
-.products__el { display: inline-block; margin: 0 13px; }
+.products__el { display: inline-block; margin: 0 13px 20px; }
 
 .product { position: relative; display: inline-block; text-align: center; }
 .product__top { position: relative; margin-bottom: 21px; }
@@ -184,8 +184,6 @@ body { font-family: "Lato"; font-size: 14px; }
  .top-menu{ text-align: center; }
  .top-menu__left{ width: 100%; }
  .top-menu__right{ width: 100%; } }
-@media only screen and (max-width: 594px){
- .products__el{ margin-bottom: 15px; } }
 
 
 
