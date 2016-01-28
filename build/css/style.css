@@ -92,6 +92,8 @@ body { font-family: "Lato"; font-size: 14px; }
 .nav__link:hover { color: #ee4415; border-color: #ee4415; }
 .nav__link_active { color: #ee4415; border-color: #ee4415; }
 
+.choose-bike { text-align: center; }
+
 .search { display: inline-block; color: #777; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 .search:hover { color: #fff; }
 .search__ico { position: relative; top: -2px; left: -2px; }
@@ -116,6 +118,17 @@ body { font-family: "Lato"; font-size: 14px; }
 .promo-item__color_two { color: #f1613d; }
 .promo-item__color_three { color: #383f30; }
 .promo-item__color_four { color: #525a46; }
+
+.title-section { display: inline-block; margin: 89px auto; background: url(/img/bg-section.png) top center no-repeat; text-align: center; }
+.title-section__title { padding-top: 31px; font-size: 34px; font-weight: 600; text-transform: uppercase; }
+.title-section__orange { color: #ed5126; }
+.title-section p { margin-top: 5px; font-family: Playball; font-size: 22px; color: #929292; }
+
+.filter__el { display: inline-block; }
+.filter__el:before { content: "•"; color: #929292; padding: 0 9px; }
+.filter__el:first-child:before { content: ""; }
+.filter__link { color: #929292; text-transform: uppercase; font-weight: 600; font-size: 15px; }
+.filter__link_active { color: #1f1f1f; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1270px){

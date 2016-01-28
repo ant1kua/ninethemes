@@ -260,6 +260,9 @@ body
       color: $orangeT
       border-color: $orangeT
 
+.choose-bike
+  text-align: center
+
 //search
 .search
   display: inline-block
@@ -380,3 +383,48 @@ body
       color: $promoItemThree
     &_four
       color: $promoItemFour
+
+//title-section
+.title-section
+  display: inline-block
+  margin: 89px auto
+  background: url(/img/bg-section.png) top center no-repeat
+  text-align: center
+
+  &__title
+    padding-top: 31px
+    font-size: 34px
+    font-weight: 600
+    text-transform: uppercase
+
+  &__orange
+    color: $orangeTitleSection
+    
+  & p
+    margin-top: 5px
+    font-family: Playball
+    font-size: 22px
+    color: $greylight
+
+//filter
+.filter
+
+  &__list
+
+  &__el
+    display: inline-block
+    &:before
+      content: '•'
+      color: $greylight
+      padding: 0 9px
+    &:first-child
+      &:before
+        content: ''
+
+  &__link
+    color: $greylight
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 15px
+    &_active
+      color: $filterActive
