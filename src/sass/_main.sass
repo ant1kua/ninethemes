@@ -117,9 +117,17 @@ body
     +r(1024)
       display: block
 
-
-
-
+  &_white
+    width: 50px
+    height: 50px
+    line-height: 50px
+    text-align: center
+    background-color: $white
+    color: $black
+    font-size: 16px
+    &:hover
+      background-color: $orangeB
+      color: $white
 
 //subscribe
 .subscribe
@@ -260,8 +268,9 @@ body
       color: $orangeT
       border-color: $orangeT
 
+//choose-bike
 .choose-bike
-  text-align: center
+
 
 //search
 .search
@@ -387,7 +396,7 @@ body
 //title-section
 .title-section
   display: inline-block
-  margin: 89px auto
+  margin: 89px auto 61px
   background: url(/img/bg-section.png) top center no-repeat
   text-align: center
 
@@ -428,3 +437,74 @@ body
     font-size: 15px
     &_active
       color: $filterActive
+
+//btn-group
+.btn-group
+
+  & ul
+    display: inline-block
+
+  & li
+    display: inline-block
+    padding-right: 7px
+
+//products
+.products
+  margin-top: 55px
+
+  &__el
+    display: inline-block
+    margin: 0 13px
+
+//product
+.product
+  position: relative
+  display: inline-block
+  text-align: center
+
+  &__top
+    position: relative
+    margin-bottom: 21px
+
+
+    & a
+      display: inline-block
+
+    & img
+      width: 100%
+      box-sizing: border-box
+      border-bottom: 3px solid transparent
+      transition: all 0.2s ease-in
+
+  &__btns
+    display: none
+    position: absolute
+    top: 120px
+    left: 50px
+
+
+  &__bottom
+    font-family: Roboto
+
+    h4
+      font-size: 17px
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 8px
+
+  &__price
+    margin: 0 5px
+
+    &_new
+      color: $orangeT
+    &_old
+      text-decoration: line-through
+      color: $greylight
+
+  &:hover
+    .product__top img
+      opacity: 0.3
+      border-bottom: 3px solid $orangeT
+      background: rgba(255, 255, 255, .70)
+    .product__btns
+      display: block
