@@ -559,6 +559,37 @@ body
       background-color: $orangeTitleSection
       border-color: $orangeTitleSection
 
+//contacts
+.contacts
+  padding-top: 1px
+  background-image: url("/img/bg-address.jpg")
+  background-position: top right
+  background-attachment: scroll
+  background-repeat: no-repeat
+
+  &__box
+    margin: 81px auto 69px auto
+    max-width: 800px
+    padding: 55px 0 95px
+    background-color: $footerBg
+    color: $greylight
+    font-size: 17px
+    line-height: 1.9
+
+  &__logo
+    margin-bottom: 5px
+
+  & img
+    margin: 33px 0 8px
+
+  & h3
+    margin-bottom: 15px
+    text-transform: uppercase
+    color: $white
+    font-weight: bold
+    font-size: 21px
+
+//footer
 .footer
   padding: 65px 0
   background-color: $footerBg
@@ -608,3 +639,33 @@ body
     font-family: Roboto
     font-size: 15px
     padding: 3px 0
+    transition: all 0.2s ease-in
+    &:hover
+      color: $white
+
+//partners
+.partners
+  background-color: transparentize($darkBlack, .8)
+  padding: 23px 0
+
+  &__ul
+    width: 100%
+
+  &__el
+    display: inline-block
+    width: 19.7%
+    border-left: 1px solid rgba(255, 255, 255, .09)
+    box-sizing: border-box
+    &:first-child
+      border: none
+
+    & a
+      display: block
+
+    & img
+      margin: 0 auto
+      opacity: 0.3
+      transition: all 0.2s ease-in
+      &:hover
+        opacity: 1
+
