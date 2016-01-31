@@ -152,7 +152,6 @@ body
     margin-top: 21px
 
   &_footer
-    .subscribe__field
 
     .subscribe__action
       position: absolute
@@ -291,10 +290,6 @@ body
     &_active
       color: $orangeT
       border-color: $orangeT
-
-//choose-bike
-.choose-bike
-
 
 //search
 .search
@@ -441,8 +436,6 @@ body
 
 //filter
 .filter
-
-  &__list
 
   &__el
     display: inline-block
@@ -629,10 +622,6 @@ body
     margin-bottom: 22px
     text-transform: uppercase
 
-  &__list
-
-  &__el
-
   &__link
     display: block
     color: $greylight
@@ -669,3 +658,85 @@ body
       &:hover
         opacity: 1
 
+//news
+.news
+  background-color: $bgNews
+
+  &__list
+    padding: 5px 0 166px
+
+  &__el
+    +clr()
+    display: inline-block
+    width: 33%
+    padding: 42px 15px 0
+
+
+  &__item
+    +clr()
+
+  &__left
+    float: left
+    width: 20%
+    font-family: "Roboto Slab"
+    color: $white
+    text-transform: uppercase
+
+  &__right
+    float: left
+    width: 80%
+    text-align: left
+
+  &__date
+    padding-top: 5px
+    width: 60px
+    height: 60px
+    background-color: $orangeNews
+
+  &__big
+    font-weight: bold
+    font-size: 19px
+
+  &__small
+    font-size: 15px
+
+  &__count
+    padding-top: 5px
+    width: 60px
+    height: 60px
+    background-color: $greyNews
+
+  &__more
+    font-size: 12px
+    font-weight: bold
+    color: $orangeNews
+    cursor: pointer
+    text-transform: uppercase
+    transition: all 0.2s ease-in
+    &:hover
+      padding-left: 5px
+      color: $greyNews
+
+  &__tags
+    font-size: 14px
+    color: $greySoftNews
+
+    & li
+      cursor: pointer
+      display: inline-block
+      transition: all 0.2s ease-in
+      &:last-child
+        &:before
+          content: '|'
+          padding: 0 16px
+      &:hover
+        color: $black
+
+  &__title
+    padding-bottom: 12px
+    & a
+      font-size: 19px
+      color: $lightGreyNews
+      transition: all 0.2s ease-in
+      &:hover
+        color: $orangeNews
