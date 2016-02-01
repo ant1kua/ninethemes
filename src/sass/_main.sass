@@ -141,6 +141,20 @@ body
     height: 35px
     border-radius: 2px
 
+  &_bg-none
+    border: 1px solid $greyTopT
+    color: #999
+    text-transform: uppercase
+    background: none
+    border-radius: 30px
+    padding: 11px 32px
+    &:hover
+      color: $white
+      background-color: $blackB
+
+  &_big
+    font-size: 15px
+
 //subscribe
 .subscribe
   position: relative
@@ -199,7 +213,6 @@ body
     padding: 12px 20px 13px 20px
     text-transform: uppercase
     color: $greyTopT
-    transition: all 0.2s ease-in
 
     &:hover
       color: $orangeT
@@ -281,7 +294,6 @@ body
     color: $white
     padding: 5px 0 37px 0
     border-bottom: 3px solid transparent
-    transition: all 0.2s ease-in
     text-transform: uppercase
 
     &:hover
@@ -546,7 +558,6 @@ body
     font-size: 15px
     border: 1px solid $socialIco
     border-radius: 30px
-    transition: all 0.2s ease-in
     &:hover
       color: $white
       background-color: $orangeTitleSection
@@ -628,7 +639,6 @@ body
     font-family: Roboto
     font-size: 15px
     padding: 3px 0
-    transition: all 0.2s ease-in
     &:hover
       color: $white
 
@@ -737,7 +747,6 @@ body
     & a
       font-size: 19px
       color: $lightGreyNews
-      transition: all 0.2s ease-in
       &:hover
         color: $orangeNews
 
@@ -788,3 +797,33 @@ body
 
     &_new
       color: $orangeNews
+
+//found-bike
+.found-bike
+  padding: 49px 0 45px
+  background-color: $socialIco
+  +clr
+
+  &__left
+    float: left
+
+  &__right
+    float: right
+    
+    & span
+      margin: 3px 5px 0 27px
+
+  &__header
+    font-size: 28px
+    color: $white
+    line-height: 1
+
+    & span
+      color: $orangeNews
+      font-weight: 800
+
+  &__descr
+    padding-top: 10px
+    color: $greyTopT
+    font-size: 17px
+    line-height: 1
