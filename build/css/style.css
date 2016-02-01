@@ -33,7 +33,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 section { text-align: center; }
 
-a { cursor: pointer; text-decoration: none; }
+a { cursor: pointer; text-decoration: none; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 
 body { font-family: "Lato"; font-size: 14px; }
 
@@ -210,6 +210,20 @@ body { font-family: "Lato"; font-size: 14px; }
 .news__title { padding-bottom: 12px; }
 .news__title a { font-size: 19px; color: #393939; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 .news__title a:hover { color: #ed5126; }
+
+.offers { padding-bottom: 130px; }
+.offers a { display: block; }
+.offers img { border-right: 1px solid #eee; }
+.offers__el { display: inline-block; padding: 45px 15px 0; }
+.offers__item { *zoom: 1; }
+.offers__item:after { content: " "; display: table; clear: both; }
+.offers__left { float: left; }
+.offers__right { float: left; text-align: left; margin-left: 20px; }
+.offers__title { padding-top: 28px; font-family: Playball; font-size: 18px; color: #929292; }
+.offers__model { padding-top: 6px; font-family: Roboto; text-transform: uppercase; font-size: 17px; }
+.offers__model:hover { color: #ed5126; }
+.offers__price { padding-top: 3px; font-family: Roboto; font-size: 15px; color: #929292; }
+.offers__price_new { color: #ed5126; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1270px){

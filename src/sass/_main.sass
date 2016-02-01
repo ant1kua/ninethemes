@@ -740,3 +740,51 @@ body
       transition: all 0.2s ease-in
       &:hover
         color: $orangeNews
+
+//offers
+.offers
+  padding-bottom: 130px
+
+  a
+    display: block
+
+  img
+    border-right: 1px solid #eee
+
+  &__el
+    display: inline-block
+    padding: 45px 15px 0
+
+  &__item
+    +clr()
+
+  &__left
+    float: left
+
+  &__right
+    float: left
+    text-align: left
+    margin-left: 20px
+
+  &__title
+    padding-top: 28px
+    font-family: Playball
+    font-size: 18px
+    color: $greylight
+
+  &__model
+    padding-top: 6px
+    font-family: Roboto
+    text-transform: uppercase
+    font-size: 17px
+    &:hover
+      color: $orangeNews
+      
+  &__price
+    padding-top: 3px
+    font-family: Roboto
+    font-size: 15px
+    color: $greylight
+
+    &_new
+      color: $orangeNews
