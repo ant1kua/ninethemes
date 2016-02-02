@@ -155,6 +155,17 @@ body
   &_big
     font-size: 15px
 
+  &_cart
+    width: 40px
+    height: 40px
+    line-height: 40px
+    border: 1px solid $white
+    border-radius: 50px
+    background: transparent
+    &:hover
+      color: $blackB
+      background-color: $white
+
 //subscribe
 .subscribe
   position: relative
@@ -802,7 +813,9 @@ body
 .found-bike
   padding: 49px 0 45px
   background-color: $socialIco
-  +clr
+
+  &__in
+    +clr
 
   &__left
     float: left
@@ -827,3 +840,144 @@ body
     color: $greyTopT
     font-size: 17px
     line-height: 1
+
+//featured
+.featured
+
+  &__in
+    +clr
+
+  &__item
+    position: relative
+    width: 25%
+    float: left
+    &:hover
+      .featured__descr
+        display: block
+
+  &__img img
+    display: block
+    width: 100%
+    margin: 0 auto
+
+  &__descr
+    transition: all 0.2s ease-in
+    display: none
+    text-align: center
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(238, 78, 34, .93)
+
+  &__info
+    position: absolute
+    top: 50%
+    margin-top: -74px
+    margin-left: 65px
+    color: $white
+    text-align: center
+
+  &__brand
+    padding-top: 15px
+    font-family: Playball
+    font-size: 22px
+
+  &__model
+    padding-top: 8px
+    color: $white
+    font-family: "Roboto Slab"
+    font-size: 24px
+    text-transform: uppercase
+
+  &__price
+    padding-top: 6px
+    font-family: "Roboto Slab"
+    font-size: 17px
+
+//discount
+.discount
+  +clr
+  position: relative
+  text-align: left
+  color: $discountBlack
+
+  &__center
+    position: absolute
+    padding: 0 28px
+    left: 43.2%
+    top: 45%
+    height: 40px
+    line-height: 40px
+    transform: rotate(-90deg)
+    text-transform: uppercase
+    border-radius: 40px
+    font-family: Roboto
+    font-weight: 500
+    color: $greylight
+    background-color: $white
+    z-index: 1
+
+  &__left
+    position: relative
+    float: left
+    width: 50%
+    background: #f8f8f8 url("/img/promotion-1.jpg") bottom right no-repeat
+
+  &__right
+    float: left
+    width: 50%
+    background: #f0f0f0 url("/img/promotion-2.jpg") bottom right no-repeat
+
+  &__info
+    display: inline-block
+    position: relative
+    padding: 141px 84px
+
+    &_right
+      float: right
+
+  &__name
+    font-family: Playball
+    font-size: 22px
+
+  &__big
+    font-size: 42px
+    font-weight: 800
+    & span
+      font-family: "Roboto Slab"
+      font-size: 38px
+      font-weight: 300
+      color: $orangeNews
+      vertical-align: top
+
+  &__details
+    padding-top: 11px
+    font-size: 15px
+    line-height: 2
+
+    & li
+      &:before
+        content: '• '
+
+  &__buttons
+    padding-top: 47px
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    color: $blackB
+
+    li
+      border-left: 1px solid #ddd
+      display: inline-block
+      &:first-child
+        border: none
+
+    span
+      cursor: pointer
+      display: block
+      padding: 7px 14px
+      transition: all 0.2s ease-in
+      &:hover
+        color: $orangeNews

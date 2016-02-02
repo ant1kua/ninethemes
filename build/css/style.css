@@ -67,6 +67,8 @@ body { font-family: "Lato"; font-size: 14px; }
 .btn_bg-none { border: 1px solid #777; color: #999; text-transform: uppercase; background: none; -webkit-border-radius: 30px; border-radius: 30px; padding: 11px 32px; }
 .btn_bg-none:hover { color: #fff; background-color: #1e1e1e; }
 .btn_big { font-size: 15px; }
+.btn_cart { width: 40px; height: 40px; line-height: 40px; border: 1px solid #fff; -webkit-border-radius: 50px; border-radius: 50px; background: transparent; }
+.btn_cart:hover { color: #1e1e1e; background-color: #fff; }
 
 .subscribe { position: relative; padding-top: 40px; margin: 0 auto; max-width: 400px; }
 .subscribe__action { margin-top: 21px; }
@@ -228,14 +230,44 @@ body { font-family: "Lato"; font-size: 14px; }
 .offers__price { padding-top: 3px; font-family: Roboto; font-size: 15px; color: #929292; }
 .offers__price_new { color: #ed5126; }
 
-.found-bike { padding: 49px 0 45px; background-color: #2e2e2e; *zoom: 1; }
-.found-bike:after { content: " "; display: table; clear: both; }
+.found-bike { padding: 49px 0 45px; background-color: #2e2e2e; }
+.found-bike__in { *zoom: 1; }
+.found-bike__in:after { content: " "; display: table; clear: both; }
 .found-bike__left { float: left; }
 .found-bike__right { float: right; }
 .found-bike__right span { margin: 3px 5px 0 27px; }
 .found-bike__header { font-size: 28px; color: #fff; line-height: 1; }
 .found-bike__header span { color: #ed5126; font-weight: 800; }
 .found-bike__descr { padding-top: 10px; color: #777; font-size: 17px; line-height: 1; }
+
+.featured__in { *zoom: 1; }
+.featured__in:after { content: " "; display: table; clear: both; }
+.featured__item { position: relative; width: 25%; float: left; }
+.featured__item:hover .featured__descr { display: block; }
+.featured__img img { display: block; width: 100%; margin: 0 auto; }
+.featured__descr { -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; display: none; text-align: center; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(238, 78, 34, 0.93); }
+.featured__info { position: absolute; top: 50%; margin-top: -74px; margin-left: 65px; color: #fff; text-align: center; }
+.featured__brand { padding-top: 15px; font-family: Playball; font-size: 22px; }
+.featured__model { padding-top: 8px; color: #fff; font-family: "Roboto Slab"; font-size: 24px; text-transform: uppercase; }
+.featured__price { padding-top: 6px; font-family: "Roboto Slab"; font-size: 17px; }
+
+.discount { *zoom: 1; position: relative; text-align: left; color: #444; }
+.discount:after { content: " "; display: table; clear: both; }
+.discount__center { position: absolute; padding: 0 28px; left: 43.2%; top: 45%; height: 40px; line-height: 40px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); text-transform: uppercase; -webkit-border-radius: 40px; border-radius: 40px; font-family: Roboto; font-weight: 500; color: #929292; background-color: #fff; z-index: 1; }
+.discount__left { position: relative; float: left; width: 50%; background: #f8f8f8 url("/img/promotion-1.jpg") bottom right no-repeat; }
+.discount__right { float: left; width: 50%; background: #f0f0f0 url("/img/promotion-2.jpg") bottom right no-repeat; }
+.discount__info { display: inline-block; position: relative; padding: 141px 84px; }
+.discount__info_right { float: right; }
+.discount__name { font-family: Playball; font-size: 22px; }
+.discount__big { font-size: 42px; font-weight: 800; }
+.discount__big span { font-family: "Roboto Slab"; font-size: 38px; font-weight: 300; color: #ed5126; vertical-align: top; }
+.discount__details { padding-top: 11px; font-size: 15px; line-height: 2; }
+.discount__details li:before { content: "• "; }
+.discount__buttons { padding-top: 47px; font-size: 14px; font-weight: bold; text-transform: uppercase; color: #1e1e1e; }
+.discount__buttons li { border-left: 1px solid #ddd; display: inline-block; }
+.discount__buttons li:first-child { border: none; }
+.discount__buttons span { cursor: pointer; display: block; padding: 7px 14px; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.discount__buttons span:hover { color: #ed5126; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1270px){
