@@ -166,7 +166,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .social__link { display: block; width: 32px; height: 32px; padding: 5px 0; text-align: center; color: #2e2e2e; font-size: 15px; border: 1px solid #2e2e2e; -webkit-border-radius: 30px; border-radius: 30px; }
 .social__link:hover { color: #fff; background-color: #eb5126; border-color: #eb5126; }
 
-.contacts { padding-top: 1px; background-image: url("/img/bg-address.jpg"); background-position: top right; background-attachment: scroll; background-repeat: no-repeat; }
+.contacts { padding-top: 1px; background-image: url("../img/bg-address.jpg"); background-position: top right; background-attachment: scroll; background-repeat: no-repeat; }
 .contacts__box { margin: 81px auto 69px auto; max-width: 800px; padding: 55px 0 95px; background-color: #141414; color: #929292; font-size: 17px; line-height: 1.9; }
 .contacts__logo { margin-bottom: 5px; }
 .contacts img { margin: 33px 0 8px; }
