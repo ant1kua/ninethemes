@@ -41,7 +41,7 @@ body { font-family: "Lato"; font-size: 14px; }
 
 .atom { padding: 10px; margin: 20px; border: 1px solid #ccc; }
 
-.newsletter { margin: 40px auto; position: relative; width: 870px; padding: 50px 60px; background-image: url(/img/bg-newsletter.jpg); color: #fff; }
+.newsletter { margin: 40px auto; position: relative; width: 870px; padding: 50px 60px; background: url("../img/bg-newsletter.jpg"); color: #fff; }
 .newsletter__in { padding: 92px 0 56px 0; text-align: center; }
 .newsletter__title { font-size: 48px; }
 .newsletter__descr { font-size: 15px; }
@@ -58,7 +58,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .btn_square i { margin: 0 4px 0 0; }
 .btn_close { position: absolute; top: 0; right: 0; padding-right: 8px; font-size: 25px; font-weight: 600; z-index: 1; }
 .btn_close:before { content: ""; position: absolute; top: -39px; right: -36px; background-color: #DC5736; padding: 55px 30px 55px 35px; z-index: -1; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
-.btn_find { cursor: pointer; display: inline-block; width: 180px; height: 50px; background-image: url(/img/bg-btn.png); }
+.btn_find { cursor: pointer; display: inline-block; width: 180px; height: 50px; background: url("../img/bg-btn.png"); }
 .btn_nav { display: none; padding: 9px 14px; -webkit-border-radius: 2px; border-radius: 2px; cursor: pointer; width: 100%; color: #fff; text-transform: uppercase; font-weight: 600; background-color: #ee4415; }
 .btn_nav i { display: inline-block; margin-right: 5px; }
 .btn_white { width: 50px; height: 50px; line-height: 50px; text-align: center; background-color: #fff; color: #222; font-size: 16px; }
@@ -109,7 +109,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .search:hover { color: #fff; }
 .search__ico { position: relative; top: -2px; left: -2px; }
 
-.promo { position: relative; width: 100%; max-height: 790px; height: 790px; background-image: url(/ninethemes/build/img/goshop-1.png); background-repeat: no-repeat; background-size: cover; }
+.promo { position: relative; width: 100%; max-height: 790px; height: 790px; background: url("../img/goshop-1.png"); background-repeat: no-repeat; background-size: cover; }
 .promo__img { width: 100%; }
 .promo__img_big { width: 550px; height: 270px; }
 .promo__big { position: absolute; bottom: 275px; left: 445px; }
@@ -130,7 +130,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .promo-item__color_three { color: #383f30; }
 .promo-item__color_four { color: #525a46; }
 
-.title-section { display: inline-block; margin: 89px auto 61px; background: url(/img/bg-section.png) top center no-repeat; text-align: center; }
+.title-section { display: inline-block; margin: 89px auto 61px; background: url("../img/bg-section.png") top center no-repeat; text-align: center; }
 .title-section__title { padding-top: 31px; font-size: 34px; font-weight: 600; text-transform: uppercase; }
 .title-section__orange { color: #eb5126; }
 .title-section p { margin-top: 5px; font-family: Playball; font-size: 22px; color: #929292; }
@@ -166,7 +166,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .social__link { display: block; width: 32px; height: 32px; padding: 5px 0; text-align: center; color: #2e2e2e; font-size: 15px; border: 1px solid #2e2e2e; -webkit-border-radius: 30px; border-radius: 30px; }
 .social__link:hover { color: #fff; background-color: #eb5126; border-color: #eb5126; }
 
-.contacts { padding-top: 1px; background-image: url("../img/bg-address.jpg"); background-position: top right; background-attachment: scroll; background-repeat: no-repeat; }
+.contacts { padding-top: 1px; background: url("../img/bg-address.jpg"); background-position: top right; background-attachment: scroll; background-repeat: no-repeat; }
 .contacts__box { margin: 81px auto 69px auto; max-width: 800px; padding: 55px 0 95px; background-color: #141414; color: #929292; font-size: 17px; line-height: 1.9; }
 .contacts__logo { margin-bottom: 5px; }
 .contacts img { margin: 33px 0 8px; }
@@ -254,8 +254,8 @@ body { font-family: "Lato"; font-size: 14px; }
 .discount { *zoom: 1; position: relative; text-align: left; color: #444; }
 .discount:after { content: " "; display: table; clear: both; }
 .discount__center { position: absolute; padding: 0 28px; left: 43.2%; top: 45%; height: 40px; line-height: 40px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); text-transform: uppercase; -webkit-border-radius: 40px; border-radius: 40px; font-family: Roboto; font-weight: 500; color: #929292; background-color: #fff; z-index: 1; }
-.discount__left { position: relative; float: left; width: 50%; background: #f8f8f8 url("/img/promotion-1.jpg") bottom right no-repeat; }
-.discount__right { float: left; width: 50%; background: #f0f0f0 url("/img/promotion-2.jpg") bottom right no-repeat; }
+.discount__left { position: relative; float: left; width: 50%; background: #f8f8f8 url("../img/promotion-1.jpg") bottom right no-repeat; }
+.discount__right { float: left; width: 50%; background: #f0f0f0 url("../img/promotion-2.jpg") bottom right no-repeat; }
 .discount__info { display: inline-block; position: relative; padding: 141px 84px; }
 .discount__info_right { float: right; }
 .discount__name { font-family: Playball; font-size: 22px; }
