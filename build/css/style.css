@@ -268,10 +268,23 @@ body { font-family: "Lato"; font-size: 14px; }
 .discount__buttons li:first-child { border: none; }
 .discount__buttons span { cursor: pointer; display: block; padding: 7px 14px; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 .discount__buttons span:hover { color: #ed5126; }
+
+.owl { padding: 65px 45px 0 45px; margin-top: 85px; border-top: 1px solid #1e1e1e; }
+.owl img { opacity: 0.25; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.owl img:hover { opacity: 1; }
+
+.owl-buttons { position: absolute; left: -15px; right: -15px; top: 70px; }
+.owl-buttons .owl-prev { position: absolute; top: 0; left: 0; }
+.owl-buttons .owl-next { position: absolute; top: 0; right: 0; }
+
+.owl-theme .owl-controls .owl-buttons div { background: none; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+
 @media only screen and (max-width: 1270px){
  .promo-item__descr{ top: 55px; } }
+
 @media only screen and (max-width: 1024px){
  .btn_nav{ display: block; }
  .header{ padding-top: 0; }
@@ -282,8 +295,10 @@ body { font-family: "Lato"; font-size: 14px; }
  .promo-item__descr{ right: 0px; top: 35px; }
  .promo-item__title{ font-size: 25px; }
  .promo-item__color{ font-size: 21px; line-height: 35px; } }
+
 @media only screen and (max-width: 850px){
  .promo-item__descr p{ margin: 4px 0 20px 0; } }
+
 @media only screen and (max-width: 768px){
  .top-menu{ display: table; }
  .top-menu__left{ display: table-cell; }
@@ -298,6 +313,7 @@ body { font-family: "Lato"; font-size: 14px; }
  .promo-item__descr p{ margin: 4px 0 46px 0; }
  .promo-item__title{ font-size: 39px; }
  .promo-item__color{ font-size: 31px; line-height: 54px; } }
+
 @media only screen and (max-width: 603px){
  .top-menu{ text-align: center; }
  .top-menu__left{ width: 100%; }
