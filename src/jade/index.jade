@@ -324,7 +324,7 @@ block content
 							p.featured__brand Cycling Shoes
 							a(href="#").featured__model sidebike m065 pro
 							p.featured__price $250.00
-		//found-bike
+		//START found-bike
 		section.found-bike
 			.found-bike__in.container
 				.found-bike__left
@@ -335,8 +335,33 @@ block content
 				.found-bike__right
 					span.btn.btn_bg-none.btn_big discover
 					span.btn.btn_std.btn_big purchase
-		//found-bike
-
+		//END found-bike
+		//START reviews
+		section.reviews
+			.reviews__in.container
+				.owl-reviews
+					.reviews__item
+						h2.reviews__title they says
+						p.reviews__second-title Happy clients
+						p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
+						p.reviews__sig
+							span jesica wilson
+							|  - France
+					.reviews__item
+						h2.reviews__title they says
+						p.reviews__second-title Happy clients
+						p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
+						p.reviews__sig
+							span artur
+							|  - Franc e
+					.reviews__item
+						h2.reviews__title they says
+						p.reviews__second-title Happy clients
+						p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
+						p.reviews__sig
+							span nine-thmes
+							|  - France
+		//END reviews
 		//START offers
 		section.offers.container
 			.title-section
@@ -584,7 +609,7 @@ block content
 									.subscribe__action
 										button.btn.btn_small(type="submit")
 											i.fa.fa-envelope
-			.owl.container
+			.owl-footer.container
 				.owl__item
 					a(href="#")
 						img(src="img/payment-1.png")

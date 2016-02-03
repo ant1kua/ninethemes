@@ -841,6 +841,62 @@ body
     font-size: 17px
     line-height: 1
 
+//reviews
+.reviews
+  padding: 103px 60px
+  background: url('../img/bg-reviews.jpg') top center no-repeat
+
+  &__item
+    padding: 0 200px
+    text-align: center
+    color: $white
+    opacity: 0.85
+
+  &__title
+    text-transform: uppercase
+    font-size: 34px
+    font-weight: bold
+
+  &__second-title
+    font-family: Playball
+    font-size: 22px
+    padding-bottom: 42px
+
+  &__quote
+    font-size: 19px
+    font-style: italic
+    padding-bottom: 51px
+
+
+  &__sig
+    font-size: 17px
+
+    & span
+      text-transform: uppercase
+
+  & .owl-buttons
+    position: absolute
+    left: -15px
+    right: -15px
+    top: 70px
+
+    & div.owl-next, div.owl-prev
+      padding: 3px 10px
+      position: absolute
+      top: 0
+      border: 1px solid rgba(255, 255, 255, .09)
+      border-radius: 0
+
+    .owl-prev
+      left: 0
+    .owl-next
+      right: 0
+
+  .owl-theme .owl-controls .owl-buttons div
+    background: none
+
+
+
 //featured
 .featured
 
@@ -983,31 +1039,35 @@ body
         color: $orangeNews
 
 //owl
-.owl
-  padding: 65px 45px 0 45px
-  margin-top: 85px
-  border-top: 1px solid $blackB
+.footer
+  .owl-footer
+    padding: 65px 45px 0 45px
+    margin-top: 85px
+    border-top: 1px solid $blackB
 
-  & img
-    opacity: 0.25
-    transition: all 0.2s ease-in
-    &:hover
-      opacity: 1
+    & img
+      opacity: 0.25
+      transition: all 0.2s ease-in
+      &:hover
+        opacity: 1
 
-.owl-buttons
-  position: absolute
-  left: -15px
-  right: -15px
-  top: 70px
-
-  .owl-prev
+  .owl-buttons
     position: absolute
-    top: 0
-    left: 0
-  .owl-next
-    position: absolute
-    top: 0
-    right: 0
+    left: -15px
+    right: -15px
+    top: 70px
 
-.owl-theme .owl-controls .owl-buttons div
-  background: none
+    .owl-prev
+      position: absolute
+      top: 0
+      left: 0
+    .owl-next
+      position: absolute
+      top: 0
+      right: 0
+
+  .owl-theme .owl-controls .owl-buttons div
+    background: none
+
+  .owl-item
+    width: 139px !important
