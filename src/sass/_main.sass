@@ -182,6 +182,22 @@ body
       position: absolute
       bottom: 0
       right: 0
+
+//ico
+.ico
+  display: inline-block
+  font-size: inherit
+
+  &_eng
+    width: 16px
+    height: 11px
+    background: url('../img/eng.png') no-repeat
+
+  &_pol
+    width: 16px
+    height: 11px
+    background: url('../img/pl.png') no-repeat
+
 //top-menu
 .top-menu
   background-color: $bgcTop
@@ -239,6 +255,27 @@ body
     border: 1px solid #333
     border-radius: 2px
     transition: all 0.2s ease-in
+
+//drop-down
+.drop-down
+
+
+  &__lang, &__curr
+    display: none
+    position: absolute
+    padding: 14px 0
+    background: $white
+    border-radius: 2px
+
+    & span
+      cursor: pointer
+      padding: 3px 40px 3px 20px
+      display: block
+      &:hover
+        background-color: #f7f7f7
+
+      & i
+        margin: 0 5px 0 0
 
 //top-line
 .top-line
@@ -459,6 +496,8 @@ body
       font-family: "Roboto Slab"
       font-size: 32px
       font-weight: 500
+      +r(640)
+        font-size: 25px
 
     & .countdown-period
       display: inline-block
@@ -467,6 +506,8 @@ body
       font-style: italic
       font-size: 12px
       color: $orangeNews
+      +r(640)
+        font-size: 8px
 
 //title-section
 .title-section
@@ -614,6 +655,8 @@ body
   background-position: top right
   background-attachment: scroll
   background-repeat: no-repeat
+  +r(1024)
+    background: $footerBg
 
   &__box
     margin: 81px auto 69px auto
@@ -639,6 +682,11 @@ body
 
 //footer
 .footer
+
+  &__in
+    +r(1192)
+      padding: 0 20px
+
   padding: 65px 0
   background-color: $footerBg
   color: $greylight
@@ -651,6 +699,11 @@ body
     padding: 0 15px
     width: 25%
     float: left
+    +r(850)
+      width: 50%
+      margin-bottom: 20px
+    +r(500)
+      width: 100%
     
 //copyright
 .copyright
@@ -686,6 +739,63 @@ body
     &:hover
       color: $white
 
+//choose-bike
+.choose-bike
+  padding-bottom: 90px
+  font-family: Roboto
+  background: url("../img/bg-choose-bike.jpg") top center repeat scroll
+
+  &__in
+    position: relative
+
+  &__round
+    position: relative
+    height: 365px
+
+  &__img img
+    display: block
+    width: 100%
+
+  &__item
+    width: 220px
+
+  &__title
+    color: $blackB
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: bold
+
+  &__price
+    font-size: 15px
+    color: $greylight
+
+    & span
+      color: $orangeNews
+
+  &__buttons
+    position: absolute
+    top: 50%
+    left: 5px
+    right: 5px
+
+  &__btn
+    position: absolute
+    top: 0
+    cursor: pointer
+    padding: 10px 12px
+    font-size: 15px
+    border: 1px solid #eee
+    transition: all 0.2s ease-in
+    &:hover
+      background: rgba(0,0,0, 0.1)
+    &_prev
+      left: 0
+    &_next
+      right: 0
+
+  &__link
+    margin-top: 70px
+
 //partners
 .partners
   background-color: transparentize($darkBlack, .8)
@@ -701,6 +811,11 @@ body
     box-sizing: border-box
     &:first-child
       border: none
+    +r(850)
+      width: 33.33%
+      border: none
+    +r(500)
+      width: 100%
 
     & a
       display: block
@@ -718,12 +833,17 @@ body
 
   &__list
     padding: 5px 0 166px
+    +r(680)
+      padding-left: 20px
+      padding-right: 20px
 
   &__el
     +clr()
     display: inline-block
     width: 33%
     padding: 42px 15px 0
+    +r(680)
+      width: 100%
 
 
   &__item
@@ -735,11 +855,23 @@ body
     font-family: "Roboto Slab"
     color: $white
     text-transform: uppercase
+    +r(1024)
+      width: 25%
+    +r(850)
+      width: 35%
+    +r(680)
+      width: 20%
 
   &__right
     float: left
     width: 80%
     text-align: left
+    +r(1024)
+      width: 75%
+    +r(850)
+      width: 65%
+    +r(680)
+      width: 80%
 
   &__date
     padding-top: 5px
@@ -793,6 +925,10 @@ body
       color: $lightGreyNews
       &:hover
         color: $orangeNews
+      +r(1024)
+        font-size: 14px
+      +r(680)
+        font-size: 19px
 
 //offers
 .offers
@@ -846,15 +982,23 @@ body
 .found-bike
   padding: 49px 0 45px
   background-color: $socialIco
+  +r(1180)
+    padding-left: 20px
+    padding-right: 20px
 
   &__in
     +clr
 
   &__left
     float: left
+    +r(850)
+      width: 100%
 
   &__right
     float: right
+    +r(850)
+      width: 100%
+      margin-top: 30px
     
     & span
       margin: 3px 5px 0 27px
@@ -878,12 +1022,16 @@ body
 .reviews
   padding: 103px 60px
   background: url('../img/bg-reviews.jpg') top center no-repeat
+  +r(768)
+    display: none
 
   &__item
     padding: 0 200px
     text-align: center
     color: $white
     opacity: 0.85
+    +r(1024)
+      padding: 0 100px
 
   &__title
     text-transform: uppercase
@@ -932,6 +1080,8 @@ body
 
 //featured
 .featured
+  +r(680)
+    display: none
 
   &__in
     +clr
@@ -943,6 +1093,9 @@ body
     &:hover
       .featured__descr
         display: block
+    +r(880)
+      width: 50%
+    +r(680)
 
   &__img img
     display: block
@@ -967,6 +1120,11 @@ body
     margin-left: 65px
     color: $white
     text-align: center
+    +r(1320)
+      margin-left: 40px
+    +r(880)
+      margin-left: 90px
+
 
   &__brand
     padding-top: 15px
@@ -979,6 +1137,14 @@ body
     font-family: "Roboto Slab"
     font-size: 24px
     text-transform: uppercase
+    +r(1180)
+      font-size: 20px
+    +r(1024)
+      font-size: 16px
+    +r(880)
+      font-size: 24px
+    +r(810)
+      font-size: 20px
 
   &__price
     padding-top: 6px
@@ -1007,22 +1173,30 @@ body
     color: $greylight
     background-color: $white
     z-index: 1
+    +r(1400)
+      display: none
 
   &__left
     position: relative
     float: left
     width: 50%
-    background: #f8f8f8 url("../img/promotion-1.jpg") bottom right no-repeat
+    background: #f8f8f8 url("../img/promotion-1.jpg") bottom center no-repeat
+    +r(820)
+      width: 100%
 
   &__right
     float: left
     width: 50%
-    background: #f0f0f0 url("../img/promotion-2.jpg") bottom right no-repeat
+    background: #f0f0f0 url("../img/promotion-2.jpg") bottom center no-repeat
+    +r(820)
+      width: 100%
 
   &__info
     display: inline-block
     position: relative
     padding: 141px 84px
+    +r(640)
+      padding: 141px 30px
 
     &_right
       float: right
@@ -1030,16 +1204,22 @@ body
   &__name
     font-family: Playball
     font-size: 22px
+    +r(1024)
+      font-size: 18px
 
   &__big
     font-size: 42px
-    font-weight: 800
+    font-weight: 80
+    +r(1024)
+      font-size: 30px
     & span
       font-family: "Roboto Slab"
       font-size: 38px
       font-weight: 300
       color: $orangeNews
       vertical-align: top
+      +r(1024)
+        font-size: 30px
 
   &__details
     padding-top: 11px
@@ -1056,6 +1236,8 @@ body
     font-weight: bold
     text-transform: uppercase
     color: $blackB
+    +r(1024)
+      padding-top: 25px
 
     li
       border-left: 1px solid #ddd
@@ -1073,6 +1255,7 @@ body
 
 //owl
 .footer
+
   .owl-footer
     padding: 65px 45px 0 45px
     margin-top: 85px

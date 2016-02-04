@@ -74,6 +74,10 @@ body { font-family: "Lato"; font-size: 14px; }
 .subscribe__action { margin-top: 21px; }
 .subscribe_footer .subscribe__action { position: absolute; bottom: 0; right: 0; }
 
+.ico { display: inline-block; font-size: inherit; }
+.ico_eng { width: 16px; height: 11px; background: url("../img/eng.png") no-repeat; }
+.ico_pol { width: 16px; height: 11px; background: url("../img/pl.png") no-repeat; }
+
 .top-menu { background-color: #272727; *zoom: 1; }
 .top-menu:after { content: " "; display: table; clear: both; }
 .top-menu__left { float: left; }
@@ -85,6 +89,11 @@ body { font-family: "Lato"; font-size: 14px; }
 .top-menu__link:hover { color: #ee4415; }
 .top-menu__link:hover .top-menu__count { color: #fff; background-color: #ee4415; border-color: #ee4415; }
 .top-menu__count { display: inline-block; padding: 0 6px 1px 6px; margin-left: 9px; border: 1px solid #333; -webkit-border-radius: 2px; border-radius: 2px; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+
+.drop-down__lang, .drop-down__curr { display: none; position: absolute; padding: 14px 0; background: #fff; -webkit-border-radius: 2px; border-radius: 2px; }
+.drop-down__lang span, .drop-down__curr span { cursor: pointer; padding: 3px 40px 3px 20px; display: block; }
+.drop-down__lang span:hover, .drop-down__curr span:hover { background-color: #f7f7f7; }
+.drop-down__lang span i, .drop-down__curr span i { margin: 0 5px 0 0; }
 
 .top-line { background-color: #272727; }
 
@@ -195,6 +204,21 @@ body { font-family: "Lato"; font-size: 14px; }
 .vertical-list__link { display: block; color: #929292; font-family: Roboto; font-size: 15px; padding: 3px 0; }
 .vertical-list__link:hover { color: #fff; }
 
+.choose-bike { padding-bottom: 90px; font-family: Roboto; background: url("../img/bg-choose-bike.jpg") top center repeat scroll; }
+.choose-bike__in { position: relative; }
+.choose-bike__round { position: relative; height: 365px; }
+.choose-bike__img img { display: block; width: 100%; }
+.choose-bike__item { width: 220px; }
+.choose-bike__title { color: #1e1e1e; text-transform: uppercase; font-size: 24px; font-weight: bold; }
+.choose-bike__price { font-size: 15px; color: #929292; }
+.choose-bike__price span { color: #ed5126; }
+.choose-bike__buttons { position: absolute; top: 50%; left: 5px; right: 5px; }
+.choose-bike__btn { position: absolute; top: 0; cursor: pointer; padding: 10px 12px; font-size: 15px; border: 1px solid #eee; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.choose-bike__btn:hover { background: rgba(0, 0, 0, 0.1); }
+.choose-bike__btn_prev { left: 0; }
+.choose-bike__btn_next { right: 0; }
+.choose-bike__link { margin-top: 70px; }
+
 .partners { background-color: rgba(0, 0, 0, 0.2); padding: 23px 0; }
 .partners__ul { width: 100%; }
 .partners__el { display: inline-block; width: 19.7%; border-left: 1px solid rgba(255, 255, 255, 0.09); -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -261,7 +285,6 @@ body { font-family: "Lato"; font-size: 14px; }
 .reviews .owl-buttons .owl-prev { left: 0; }
 .reviews .owl-buttons .owl-next { right: 0; }
 .reviews .owl-theme .owl-controls .owl-buttons div { background: none; }
-
 .featured__in { *zoom: 1; }
 .featured__in:after { content: " "; display: table; clear: both; }
 .featured__item { position: relative; width: 25%; float: left; }
@@ -276,12 +299,12 @@ body { font-family: "Lato"; font-size: 14px; }
 .discount { *zoom: 1; position: relative; text-align: left; color: #444; }
 .discount:after { content: " "; display: table; clear: both; }
 .discount__center { position: absolute; padding: 0 28px; left: 43.2%; top: 45%; height: 40px; line-height: 40px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); text-transform: uppercase; -webkit-border-radius: 40px; border-radius: 40px; font-family: Roboto; font-weight: 500; color: #929292; background-color: #fff; z-index: 1; }
-.discount__left { position: relative; float: left; width: 50%; background: #f8f8f8 url("../img/promotion-1.jpg") bottom right no-repeat; }
-.discount__right { float: left; width: 50%; background: #f0f0f0 url("../img/promotion-2.jpg") bottom right no-repeat; }
+.discount__left { position: relative; float: left; width: 50%; background: #f8f8f8 url("../img/promotion-1.jpg") bottom center no-repeat; }
+.discount__right { float: left; width: 50%; background: #f0f0f0 url("../img/promotion-2.jpg") bottom center no-repeat; }
 .discount__info { display: inline-block; position: relative; padding: 141px 84px; }
 .discount__info_right { float: right; }
 .discount__name { font-family: Playball; font-size: 22px; }
-.discount__big { font-size: 42px; font-weight: 800; }
+.discount__big { font-size: 42px; font-weight: 80; }
 .discount__big span { font-family: "Roboto Slab"; font-size: 38px; font-weight: 300; color: #ed5126; vertical-align: top; }
 .discount__details { padding-top: 11px; font-size: 15px; line-height: 2; }
 .discount__details li:before { content: "• "; }
@@ -301,8 +324,17 @@ body { font-family: "Lato"; font-size: 14px; }
 .footer .owl-item { width: 139px !important; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+@media only screen and (max-width: 1400px){
+ .discount__center{ display: none; } }
+@media only screen and (max-width: 1320px){
+ .featured__info{ margin-left: 40px; } }
 @media only screen and (max-width: 1270px){
  .promo-item__descr{ top: 55px; } }
+@media only screen and (max-width: 1192px){
+ .footer__in{ padding: 0 20px; } }
+@media only screen and (max-width: 1180px){
+ .found-bike{ padding-left: 20px; padding-right: 20px; }
+ .featured__model{ font-size: 20px; } }
 @media only screen and (max-width: 1024px){
  .btn_nav{ display: block; }
  .header{ padding-top: 0; }
@@ -312,9 +344,34 @@ body { font-family: "Lato"; font-size: 14px; }
  .nav{ display: none; }
  .promo-item__descr{ right: 0px; top: 35px; }
  .promo-item__title{ font-size: 25px; }
- .promo-item__color{ font-size: 21px; line-height: 35px; } }
+ .promo-item__color{ font-size: 21px; line-height: 35px; }
+ .contacts{ background: #141414; }
+ .news__left{ width: 25%; }
+ .news__right{ width: 75%; }
+ .news__title a{ font-size: 14px; }
+ .reviews__item{ padding: 0 100px; }
+ .featured__model{ font-size: 16px; }
+ .discount__name{ font-size: 18px; }
+ .discount__big{ font-size: 30px; }
+ .discount__big span{ font-size: 30px; }
+ .discount__buttons{ padding-top: 25px; } }
+@media only screen and (max-width: 880px){
+ .featured__item{ width: 50%; }
+ .featured__info{ margin-left: 90px; }
+ .featured__model{ font-size: 24px; } }
 @media only screen and (max-width: 850px){
- .promo-item__descr p{ margin: 4px 0 20px 0; } }
+ .promo-item__descr p{ margin: 4px 0 20px 0; }
+ .footer__col{ width: 50%; margin-bottom: 20px; }
+ .partners__el{ width: 33.33%; border: none; }
+ .news__left{ width: 35%; }
+ .news__right{ width: 65%; }
+ .found-bike__left{ width: 100%; }
+ .found-bike__right{ width: 100%; margin-top: 30px; } }
+@media only screen and (max-width: 820px){
+ .discount__left{ width: 100%; }
+ .discount__right{ width: 100%; } }
+@media only screen and (max-width: 810px){
+ .featured__model{ font-size: 20px; } }
 @media only screen and (max-width: 768px){
  .top-menu{ display: table; }
  .top-menu__left{ display: table-cell; }
@@ -328,11 +385,26 @@ body { font-family: "Lato"; font-size: 14px; }
  .promo-item__descr_left{ top: 50px; left: 50px; }
  .promo-item__descr p{ margin: 4px 0 46px 0; }
  .promo-item__title{ font-size: 39px; }
- .promo-item__color{ font-size: 31px; line-height: 54px; } }
+ .promo-item__color{ font-size: 31px; line-height: 54px; }
+ .reviews{ display: none; } }
+@media only screen and (max-width: 680px){
+ .news__list{ padding-left: 20px; padding-right: 20px; }
+ .news__el{ width: 100%; }
+ .news__left{ width: 20%; }
+ .news__right{ width: 80%; }
+ .news__title a{ font-size: 19px; }
+ .featured{ display: none; } }
+@media only screen and (max-width: 640px){
+ .limited__countdown .countdown-amount{ font-size: 25px; }
+ .limited__countdown .countdown-period{ font-size: 8px; }
+ .discount__info{ padding: 141px 30px; } }
 @media only screen and (max-width: 603px){
  .top-menu{ text-align: center; }
  .top-menu__left{ width: 100%; }
  .top-menu__right{ width: 100%; } }
+@media only screen and (max-width: 500px){
+ .footer__col{ width: 100%; }
+ .partners__el{ width: 100%; } }
 
 
 

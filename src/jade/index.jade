@@ -9,10 +9,23 @@ block content
 		.top-menu.container
 			.top-menu__left
 				ul.top-menu__list
-					li.top-menu__el
+					li.top-menu__el.top-menu__el_lang
 						a(href="#").top-menu__link us dollar
+						.top-menu__dropdown
+							.drop-down__curr
+								span.top-menu__eng Euro
+								span.top-menu__pol Pound Sterling
+								span.top-menu__pol US Dollar
 					li.top-menu__el
 						a(href="#").top-menu__link english
+						.top-menu__dropdown
+							.drop-down__lang
+								span.top-menu__eng
+									i.ico.ico_eng
+									| English
+								span.top-menu__pol
+									i.ico.ico_pol
+									| Polski
 			.top-menu__right
 				ul.top-menu__list
 					li.top-menu__el
@@ -95,6 +108,43 @@ block content
 	//END header
 	//START main
 	main.main
+		section.choose-bike
+			.title-section
+				h3.title-section__title choose your
+					span.title-section__orange  bike
+				p Search by type of bike
+
+			.choose-bike__in.container
+				ul.choose-bike__round
+					li.choose-bike__item
+						.choose-bike__img
+							img(src="img/bike-1.png")
+						a(href="#")
+							p.choose-bike__title bmx bikes
+						p.choose-bike__price Start from
+							span  $399.00
+					li.choose-bike__item
+						.choose-bike__img
+							img(src="img/bike-2.png")
+						a(href="#")
+							p.choose-bike__title mountain bikes
+						p.choose-bike__price Start from
+							span  $599.00
+					li.choose-bike__item
+						.choose-bike__img
+							img(src="img/bike-3.png")
+						a(href="#")
+							p.choose-bike__title road bikes
+						p.choose-bike__price Start from
+							span  $299.00
+				span.choose-bike__buttons
+					span.choose-bike__btn.choose-bike__btn_prev
+						i.fa.fa-angle-left
+					span.choose-bike__btn.choose-bike__btn_next
+						i.fa.fa-angle-right
+				.choose-bike__link
+					a(href="#").btn.btn_std view all bikes
+
 		section.discount
 			.discount__center
 				p discount up to 75%
@@ -248,7 +298,7 @@ block content
 									span.product__price.product__price_new $98.00
 									span.product__price.product__price_old $122.00
 			//END products
-		//featured
+		//START featured
 		section.featured
 			.title-section
 				h3.title-section__title featured products
@@ -324,6 +374,7 @@ block content
 							p.featured__brand Cycling Shoes
 							a(href="#").featured__model sidebike m065 pro
 							p.featured__price $250.00
+		//END featured
 		//START found-bike
 		section.found-bike
 			.found-bike__in.container

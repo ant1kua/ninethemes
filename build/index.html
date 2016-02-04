@@ -28,8 +28,16 @@
         <div class="top-menu container">
           <div class="top-menu__left">
             <ul class="top-menu__list">
-              <li class="top-menu__el"><a href="#" class="top-menu__link">us dollar</a></li>
-              <li class="top-menu__el"><a href="#" class="top-menu__link">english</a></li>
+              <li class="top-menu__el top-menu__el_lang"><a href="#" class="top-menu__link">us dollar</a>
+                <div class="top-menu__dropdown">
+                  <div class="drop-down__curr"><span class="top-menu__eng">Euro</span><span class="top-menu__pol">Pound Sterling</span><span class="top-menu__pol">US Dollar</span></div>
+                </div>
+              </li>
+              <li class="top-menu__el"><a href="#" class="top-menu__link">english</a>
+                <div class="top-menu__dropdown">
+                  <div class="drop-down__lang"><span class="top-menu__eng"><i class="ico ico_eng"></i>English</span><span class="top-menu__pol"><i class="ico ico_pol"></i>Polski</span></div>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="top-menu__right">
@@ -104,6 +112,32 @@
       <!--END header-->
       <!--START main-->
       <main class="main">
+        <section class="choose-bike">
+          <div class="title-section">
+            <h3 class="title-section__title">choose your<span class="title-section__orange"> bike</span></h3>
+            <p>Search by type of bike</p>
+          </div>
+          <div class="choose-bike__in container">
+            <ul class="choose-bike__round">
+              <li class="choose-bike__item">
+                <div class="choose-bike__img"><img src="img/bike-1.png"></div><a href="#">
+                  <p class="choose-bike__title">bmx bikes</p></a>
+                <p class="choose-bike__price">Start from<span> $399.00</span></p>
+              </li>
+              <li class="choose-bike__item">
+                <div class="choose-bike__img"><img src="img/bike-2.png"></div><a href="#">
+                  <p class="choose-bike__title">mountain bikes</p></a>
+                <p class="choose-bike__price">Start from<span> $599.00</span></p>
+              </li>
+              <li class="choose-bike__item">
+                <div class="choose-bike__img"><img src="img/bike-3.png"></div><a href="#">
+                  <p class="choose-bike__title">road bikes</p></a>
+                <p class="choose-bike__price">Start from<span> $299.00</span></p>
+              </li>
+            </ul><span class="choose-bike__buttons"><span class="choose-bike__btn choose-bike__btn_prev"><i class="fa fa-angle-left"></i></span><span class="choose-bike__btn choose-bike__btn_next"><i class="fa fa-angle-right"></i></span></span>
+            <div class="choose-bike__link"><a href="#" class="btn btn_std">view all bikes</a></div>
+          </div>
+        </section>
         <section class="discount">
           <div class="discount__center">
             <p>discount up to 75%</p>
@@ -247,7 +281,7 @@
           </div>
           <!--END products-->
         </section>
-        <!--featured-->
+        <!--START featured-->
         <section class="featured">
           <div class="title-section">
             <h3 class="title-section__title">featured products</h3>
@@ -319,6 +353,7 @@
             </div>
           </div>
         </section>
+        <!--END featured-->
         <!--START found-bike-->
         <section class="found-bike">
           <div class="found-bike__in container">
