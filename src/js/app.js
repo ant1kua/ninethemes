@@ -4,4 +4,5 @@
 //=include lib/jquery.plugin.min.js
 //=include lib/jquery.countdown.min.js
 //=include lib/jquery.roundabout.min.js
+//=include lib/jquery.magnific-popup.js
 //=include common.js

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-/** START owl **/
+    // OWL-CAROUSES
     $(".owl-footer").owlCarousel({
         items: 8,
         slideSpeed : 300,
@@ -25,12 +25,12 @@ $(document).ready(function() {
         ]
     });
 
-/** START countdown **/
-var loftoffTime = new Date();
-    loftoffTime = new Date(2016, 2-1, 25);
-    $('.countdown').countdown({until: loftoffTime, format: 'DHMS'});
+    // COUNTDOWN
+    var loftoffTime = new Date();
+        loftoffTime = new Date(2016, 2-1, 25);
+        $('.countdown').countdown({until: loftoffTime, format: 'DHMS'});
 
-/** START roundabout **/
+    // ROUNDABOUT
     $('.choose-bike__round').roundabout({
         autoplay: true,
         autoplayDuration: 5000,
@@ -41,10 +41,13 @@ var loftoffTime = new Date();
         autoplayPauseOnHover: true
     });
 
+    // MAGNIFIC-POPUP
+    //$('.popup').magnificPopup({
+    //
+    //});
 
-/** START click event **/
+    // CLICK EVENTS
     $(function() {
-
         var buttons = $('.btn_nav');
 
         buttons.each(function(index, el) {
@@ -52,6 +55,10 @@ var loftoffTime = new Date();
                 $(this).parent().find('.nav_small__dropdown').fadeToggle();
             })
         });
+    });
+
+    $('.btn_close').click(function() {
+        $('.popup').toggle();
     });
 
 });

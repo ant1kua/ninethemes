@@ -4,6 +4,24 @@ block title
 	title Title of template
 
 block content
+	//START popup
+	.popup
+		.popup__bg
+		.popup__in
+			.newsletter
+				.newsletter__in
+					h2.newsletter__title NEWSLETTER
+					p.newsletter__descr Did you know that we ship to over
+						span 24 different countries
+					form.subscribe
+						.subscribe__field
+							input.input.input__black(placeholder="Enter your email address")
+						.subscribe__action
+							button.btn.btn_square(type="submit")
+								i.fa.fa-envelope
+								| Subscribe
+				span.btn.btn_close &times;
+	//START popup
 	//BEGIN top-line
 	.top-line
 		.top-menu.container

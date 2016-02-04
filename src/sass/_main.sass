@@ -14,6 +14,29 @@ body
   margin: 20px
   border: 1px solid #ccc
 
+//popup
+.popup
+  display: block
+
+  &__bg
+    background: $blackB
+    opacity: 0.8
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 20
+
+  &__in
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 30
+
+
 //newsletter
 .newsletter
   margin: 40px auto
@@ -22,6 +45,7 @@ body
   padding: 50px 60px
   background: url('../img/bg-newsletter.jpg')
   color: $white
+  z-index: 1550
 
   &__in
     padding: 92px 0 56px 0
@@ -82,23 +106,29 @@ body
 
   &_close
     position: absolute
+    background-color: transparent
+    text-align: right
+    //width: 60px
+    //height: 60px
+    width: 33px
+    height: 41px
+    color: $white
     top: 0
     right: 0
-    padding-right: 8px
-    font-size: 25px
-    font-weight: 600
-    z-index: 1
-    //overflow: hidden
-
-    &:before
-      content: ''
+    padding: 0 8px 19px 0
+    overflow: hidden
+    font-size: 28px
+    &:after
+      transform: rotate(45deg)
       position: absolute
-      top: -39px
-      right: -36px
-      background-color: $orangeB
-      padding: 55px 30px 55px 35px
-      z-index: -1
-      transform: rotate(-45deg)
+      content: ''
+      top: 0
+      bottom: 0
+      left: 0
+      right: -138%
+      //background: $orangeB
+      //z-index: -1
+
   
   &_find
     cursor: pointer
