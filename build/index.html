@@ -29,21 +29,23 @@
           <div class="top-menu__left">
             <ul class="top-menu__list">
               <li class="top-menu__el top-menu__el_lang"><a href="#" class="top-menu__link">us dollar</a>
-                <div class="top-menu__dropdown">
-                  <div class="drop-down__curr"><span class="top-menu__eng">Euro</span><span class="top-menu__pol">Pound Sterling</span><span class="top-menu__pol">US Dollar</span></div>
-                </div>
+                <div class="top-menu__dropdown top-menu__dropdown_curr"><span class="top-menu__eng">Euro</span><span class="top-menu__pol">Pound Sterling</span><span class="top-menu__pol">US Dollar</span></div>
               </li>
               <li class="top-menu__el"><a href="#" class="top-menu__link">english</a>
-                <div class="top-menu__dropdown">
-                  <div class="drop-down__lang"><span class="top-menu__eng"><i class="ico ico_eng"></i>English</span><span class="top-menu__pol"><i class="ico ico_pol"></i>Polski</span></div>
-                </div>
+                <div class="top-menu__dropdown top-menu__dropdown_lang"><span class="top-menu__eng"><i class="ico ico_eng"></i>English</span><span class="top-menu__pol"><i class="ico ico_pol"></i>Polski</span></div>
               </li>
             </ul>
           </div>
           <div class="top-menu__right">
             <ul class="top-menu__list">
               <li class="top-menu__el"><a href="#" class="top-menu__link">my account</a></li>
-              <li class="top-menu__el"><a href="#" class="top-menu__link">my cart<span class="top-menu__count">0</span></a></li>
+              <li class="top-menu__el"><a href="#" class="top-menu__link">my cart<span class="top-menu__count">0</span></a>
+                <div class="top-menu__dropdown">
+                  <div class="drop-down__lang">
+                    <p class="top-menu__eng">Your shopping cart is empty!</p>
+                  </div>
+                </div>
+              </li>
               <li class="top-menu__el"><a href="#" class="top-menu__link">checkout</a></li>
             </ul>
           </div>
@@ -61,7 +63,54 @@
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__el"><a class="nav__link nav__link_active">home</a></li>
-                <li class="nav__el"><a class="nav__link">bikes</a></li>
+                <li class="nav__el"><a class="nav__link">bikes</a>
+                  <div class="nav__dropdown">
+                    <div><a href="#">cameras</a>
+                      <ul>
+                        <li>Components</li>
+                        <li>Mice and Trackballs</li>
+                        <li>Monitors</li>
+                        <li>Memory</li>
+                        <li>Motherboard</li>
+                        <li>Printers</li>
+                        <li>PC</li>
+                      </ul>
+                    </div>
+                    <div><a href="#">phones</a>
+                      <ul>
+                        <li>Scanners</li>
+                        <li>Software</li>
+                        <li>Test test</li>
+                        <li>Laptops & Notebooks</li>
+                        <li>PC</li>
+                        <li>Mp3</li>
+                        <li>Mac</li>
+                      </ul>
+                    </div>
+                    <div><a href="#">scanners</a>
+                      <ul>
+                        <li>Softare</li>
+                        <li>Test</li>
+                        <li>Web-cameras</li>
+                        <li>Windows</li>
+                        <li>Test</li>
+                        <li>PC</li>
+                        <li>Printers</li>
+                      </ul>
+                    </div>
+                    <div><a href="#">software</a>
+                      <ul>
+                        <li>Cameras</li>
+                        <li>Components</li>
+                        <li>Scanners</li>
+                        <li>Software</li>
+                        <li>Mice and Trackballs</li>
+                        <li>Macs</li>
+                        <li>Printers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
                 <li class="nav__el"><a class="nav__link">clothing</a></li>
                 <li class="nav__el"><a class="nav__link">components</a></li>
                 <li class="nav__el"><a class="nav__link">accessories</a></li>
@@ -71,18 +120,26 @@
             </nav>
             <!--END nav-->
             <!--BEGIN nav_small-->
-            <div class="nav_small"><span class="btn_nav"><i class="fa fa-reorder"></i>navigation</span></div>
+            <div class="nav_small"><span class="btn_nav"><i class="fa fa-reorder"></i>navigation</span>
+              <div class="nav_small__dropdown">
+                <ul>
+                  <li><a href="#">bikes</a></li>
+                  <li><a href="#">clothing</a></li>
+                  <li><a href="#">components</a></li>
+                  <li><a href="#">accessories</a></li>
+                  <li><a href="#">blog</a></li>
+                </ul>
+              </div>
+            </div>
             <!--END nav_small-->
           </div>
         </div>
         <!--START promo-->
         <div class="promo">
-          <!--.promo__big
-          img(src="img/goshop-2.png").promo__img
-          .promo__small
-          	img(src="img/goshop-3.png").promo__img
-          -->
-          <div class="promo__btn"></div>
+          <div class="promo__big"><img src="img/goshop-2.png" class="promo__img">
+            <div class="promo__small"><img src="img/goshop-3.png" class="promo__img"></div>
+          </div>
+          <div class="promo__btn"><a href="#" class="promo__link"></a></div>
         </div>
         <!--END promo-->
         <!--START promo-item-->

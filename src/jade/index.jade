@@ -11,15 +11,13 @@ block content
 				ul.top-menu__list
 					li.top-menu__el.top-menu__el_lang
 						a(href="#").top-menu__link us dollar
-						.top-menu__dropdown
-							.drop-down__curr
-								span.top-menu__eng Euro
-								span.top-menu__pol Pound Sterling
-								span.top-menu__pol US Dollar
+						.top-menu__dropdown.top-menu__dropdown_curr
+							span.top-menu__eng Euro
+							span.top-menu__pol Pound Sterling
+							span.top-menu__pol US Dollar
 					li.top-menu__el
 						a(href="#").top-menu__link english
-						.top-menu__dropdown
-							.drop-down__lang
+						.top-menu__dropdown.top-menu__dropdown_lang
 								span.top-menu__eng
 									i.ico.ico_eng
 									| English
@@ -33,6 +31,9 @@ block content
 					li.top-menu__el
 						a(href="#").top-menu__link my cart
 							span.top-menu__count 0
+						.top-menu__dropdown
+							.drop-down__lang
+								p.top-menu__eng Your shopping cart is empty!
 					li.top-menu__el
 						a(href="#").top-menu__link checkout
 	//END top-line
@@ -51,6 +52,47 @@ block content
 							a.nav__link.nav__link_active home
 						li.nav__el
 							a.nav__link bikes
+							.nav__dropdown
+								div
+									a(href="#") cameras
+									ul
+										li Components
+										li Mice and Trackballs
+										li Monitors
+										li Memory
+										li Motherboard
+										li Printers
+										li PC
+								div
+									a(href="#") phones
+									ul
+										li Scanners
+										li Software
+										li Test test
+										li Laptops & Notebooks
+										li PC
+										li Mp3
+										li Mac
+								div
+									a(href="#") scanners
+									ul
+										li Softare
+										li Test
+										li Web-cameras
+										li Windows
+										li Test
+										li PC
+										li Printers
+								div
+									a(href="#") software
+									ul
+										li Cameras
+										li Components
+										li Scanners
+										li Software
+										li Mice and Trackballs
+										li Macs
+										li Printers
 						li.nav__el
 							a.nav__link clothing
 						li.nav__el
@@ -68,14 +110,27 @@ block content
 					span.btn_nav
 						i.fa.fa-reorder
 						|navigation
+					.nav_small__dropdown
+						ul
+							li
+								a(href="#") bikes
+							li
+								a(href="#") clothing
+							li
+								a(href="#") components
+							li
+								a(href="#") accessories
+							li
+								a(href="#") blog
 				//END nav_small
 		//START promo
 		.promo
-			//.promo__big
+			.promo__big
 				img(src="img/goshop-2.png").promo__img
 				.promo__small
 					img(src="img/goshop-3.png").promo__img
 			.promo__btn
+				a(href="#").promo__link
 		//END promo
 		//START promo-item
 		.promo-item

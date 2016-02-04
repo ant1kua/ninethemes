@@ -85,15 +85,16 @@ body { font-family: "Lato"; font-size: 14px; }
 .top-menu__list { display: inline-block; }
 .top-menu__el { display: inline-block; border-right: 1px solid #333; }
 .top-menu__el:first-child { border-left: 1px solid #333; }
+.top-menu__el:hover .top-menu__dropdown { display: block; }
 .top-menu__link { display: inline-block; padding: 12px 20px 13px 20px; text-transform: uppercase; color: #777; }
 .top-menu__link:hover { color: #ee4415; }
 .top-menu__link:hover .top-menu__count { color: #fff; background-color: #ee4415; border-color: #ee4415; }
 .top-menu__count { display: inline-block; padding: 0 6px 1px 6px; margin-left: 9px; border: 1px solid #333; -webkit-border-radius: 2px; border-radius: 2px; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
-
-.drop-down__lang, .drop-down__curr { display: none; position: absolute; padding: 14px 0; background: #fff; -webkit-border-radius: 2px; border-radius: 2px; }
-.drop-down__lang span, .drop-down__curr span { cursor: pointer; padding: 3px 40px 3px 20px; display: block; }
-.drop-down__lang span:hover, .drop-down__curr span:hover { background-color: #f7f7f7; }
-.drop-down__lang span i, .drop-down__curr span i { margin: 0 5px 0 0; }
+.top-menu__dropdown { position: absolute; padding: 14px 0; background: #fff; -webkit-border-radius: 2px; border-radius: 2px; display: none; }
+.top-menu__dropdown span { cursor: pointer; padding: 3px 40px 3px 20px; display: block; }
+.top-menu__dropdown span:hover { background-color: #f7f7f7; }
+.top-menu__dropdown span i { margin: 0 5px 0 0; }
+.top-menu__dropdown p { display: block; padding: 10px 20px; }
 
 .top-line { background-color: #272727; }
 
@@ -109,20 +110,36 @@ body { font-family: "Lato"; font-size: 14px; }
 .nav { display: block; background-color: #1E1E1E; *zoom: 1; }
 .nav:after { content: " "; display: table; clear: both; }
 .nav__list { display: inline-block; float: right; }
-.nav__el { display: inline-block; margin-left: 35px; }
+.nav__el { position: relative; display: inline-block; margin-left: 35px; }
+.nav__el:hover .nav__dropdown { display: block; }
 .nav__link { display: inline-block; font-size: 16px; color: #fff; padding: 5px 0 37px 0; border-bottom: 3px solid transparent; text-transform: uppercase; }
 .nav__link:hover { color: #ee4415; border-color: #ee4415; }
 .nav__link_active { color: #ee4415; border-color: #ee4415; }
+.nav__container { width: 83%; }
+.nav__dropdown { *zoom: 1; display: none; position: absolute; width: 1000px; top: 55px; left: -355px; z-index: 1; padding: 60px 54px; -webkit-border-radius: 2px; border-radius: 2px; background: #fff url("../img/bg-megamenu.jpg") top right no-repeat; background-color: #fff; }
+.nav__dropdown:after { content: " "; display: table; clear: both; }
+.nav__dropdown div { float: left; padding: 0 25px; }
+.nav__dropdown a { display: inline-block; margin-bottom: 15px; padding-bottom: 15px; color: #1e1e1e; font-size: 17px; font-weight: 600; text-transform: uppercase; border-bottom: 2px solid #ed5126; }
+.nav__dropdown a:hover { color: #ed5126; }
+.nav__dropdown ul { display: block; width: 100%; }
+.nav__dropdown li { cursor: pointer; font-size: 15px; line-height: 2; color: #929292; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.nav__dropdown li:hover { color: #222; }
+.nav_small__dropdown { display: none; -webkit-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; }
+.nav_small__dropdown li { width: 100%; background: #fff; border-bottom: 1px solid #eee; }
+.nav_small__dropdown li:hover { background: #f6f6f6; }
+.nav_small__dropdown a { padding: 10px 20px; display: block; color: #1e1e1e; text-transform: uppercase; }
 
 .search { display: inline-block; color: #777; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 .search:hover { color: #fff; }
 .search__ico { position: relative; top: -2px; left: -2px; }
 
-.promo { position: relative; width: 100%; max-height: 790px; height: 790px; background: url("../img/goshop-1.png"); background-repeat: no-repeat; background-size: cover; }
+.promo { position: relative; width: 100%; max-height: 790px; height: 790px; background: url("../img/goshop-1.png") top center no-repeat; background-size: cover; }
 .promo__img { width: 100%; }
 .promo__img_big { width: 550px; height: 270px; }
-.promo__big { position: absolute; bottom: 275px; left: 445px; }
+.promo__big { position: absolute; top: 25%; left: 50%; margin-left: -275px; }
 .promo__small { position: absolute; bottom: 9px; left: 230px; }
+.promo__btn { position: absolute; text-align: center; bottom: 30%; left: 50%; margin-left: -100px; }
+.promo__link { display: inline-block; background: url("../img/bg-btn.png") no-repeat; width: 180px; height: 50px; bottom: 0; left: 50%; }
 
 .promo-item { *zoom: 1; }
 .promo-item:after { content: " "; display: table; clear: both; }

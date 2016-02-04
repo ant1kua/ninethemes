@@ -153,19 +153,27 @@ var loftoffTime = new Date();
     $('.countdown').countdown({until: loftoffTime, format: 'DHMS'});
 
 /** START roundabout **/
-
-    $(document).ready(function() {
-        $('.choose-bike__round').roundabout({
-            autoplay: true,
-            autoplayDuration: 5000,
-            minOpacity: 1,
-            minScale: 0.55,
-            btnNext: ".choose-bike__btn_next",
-            btnPrev: ".choose-bike__btn_prev",
-            autoplayPauseOnHover: true
-        });
-
+    $('.choose-bike__round').roundabout({
+        autoplay: true,
+        autoplayDuration: 5000,
+        minOpacity: 1,
+        minScale: 0.55,
+        btnNext: ".choose-bike__btn_next",
+        btnPrev: ".choose-bike__btn_prev",
+        autoplayPauseOnHover: true
     });
 
+
+/** START click event **/
+    $(function() {
+
+        var buttons = $('.btn_nav');
+
+        buttons.each(function(index, el) {
+            $(el).click(function () {
+                $(this).parent().find('.nav_small__dropdown').fadeToggle();
+            })
+        });
+    });
 
 });
