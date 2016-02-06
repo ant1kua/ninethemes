@@ -2175,7 +2175,7 @@ $(document).ready(function() {
 
     // COUNTDOWN
     var loftoffTime = new Date();
-        loftoffTime = new Date(2016, 2-1, 25);
+        loftoffTime = new Date(loftoffTime.getFullYear() + 1, 1 - 1, 1);
         $('.countdown').countdown({until: loftoffTime, format: 'DHMS'});
 
     // ROUNDABOUT
