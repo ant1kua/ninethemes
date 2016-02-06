@@ -8,19 +8,20 @@ block content
 	.popup
 		.popup__bg
 		.popup__in
-			.newsletter
-				.newsletter__in
-					h2.newsletter__title NEWSLETTER
-					p.newsletter__descr Did you know that we ship to over
-						span  24 different countries
-					form.subscribe
-						.subscribe__field
-							input.input.input__black(placeholder="Enter your email address")
-						.subscribe__action
-							button.btn.btn_square(type="submit")
-								i.fa.fa-envelope
-								| Subscribe
-				span.btn.btn_close &times;
+			.popup__content
+				.newsletter
+					.newsletter__in
+						h2.newsletter__title NEWSLETTER
+						p.newsletter__descr Did you know that we ship to over
+							span  24 different countries
+						form.subscribe
+							.subscribe__field
+								input.input.input_block(placeholder="Enter your email address")
+							.subscribe__action
+								button.btn.btn_square(type="submit")
+									i.fa.fa-envelope
+									| Subscribe
+					span.btn.btn_close &times;
 	//START popup
 	//START top-line
 	.top-line
@@ -217,6 +218,7 @@ block content
 						i.fa.fa-angle-right
 				.choose-bike__link
 					a(href="#").btn.btn_std view all bikes
+
 		//END choose-bike
 		//START discount
 		section.discount
@@ -740,7 +742,7 @@ block content
 							el.vertical-list__el
 								form.subscribe.subscribe_footer
 									.subscribe__field
-										input.input.input__small(placeholder="Your email")
+										input.input.input_small(placeholder="Your email")
 									.subscribe__action
 										button.btn.btn_small(type="submit")
 											i.fa.fa-envelope
