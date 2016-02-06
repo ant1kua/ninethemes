@@ -26,7 +26,7 @@ body
     left: 0
     width: 100%
     height: 100%
-    z-index: 20
+    z-index: 300
 
   &__in
     position: fixed
@@ -34,21 +34,21 @@ body
     left: 0
     width: 100%
     height: 100%
-    z-index: 30
+    z-index: 300
 
 
 //newsletter
 .newsletter
-  margin: 40px auto
+  margin: 80px auto
   position: relative
   width: 870px
   padding: 50px 60px
   background: url('../img/bg-newsletter.jpg')
   color: $white
-  z-index: 1550
+  z-index: 350
 
   &__in
-    padding: 92px 0 56px 0
+    padding: 92px 0 56px
     text-align: center
 
   &__title
@@ -106,28 +106,26 @@ body
 
   &_close
     position: absolute
-    background-color: transparent
     text-align: right
     //width: 60px
     //height: 60px
     width: 33px
     height: 41px
-    color: $white
     top: 0
     right: 0
     padding: 0 8px 19px 0
     overflow: hidden
     font-size: 28px
-    &:after
-      transform: rotate(45deg)
-      position: absolute
-      content: ''
-      top: 0
-      bottom: 0
-      left: 0
-      right: -138%
-      //background: $orangeB
-      //z-index: -1
+    //&:after
+    //  transform: rotate(45deg)
+    //  position: absolute
+    //  content: ''
+    //  top: 0
+    //  bottom: 0
+    //  left: 0
+    //  right: -138%
+    //  background: $orangeB
+    //  z-index: -1
 
   
   &_find
@@ -315,12 +313,12 @@ body
 
 //header
 .header
-  padding-top: 35px
   background-color: $bgcNav
   +r(1024)
     padding-top: 0
 
   &__in
+    padding-top: 35px
     +clr()
     +r(1024)
       padding: 45px 20px
@@ -346,7 +344,7 @@ body
 .logo
 
   &__link
-    display: inline-block
+    display: block
 
   &__descr
     font-size: 15px
@@ -355,7 +353,6 @@ body
 //nav
 .nav
   display: block
-  background-color: $bgcNav
   +clr()
   +r(1024)
     display: none
@@ -373,10 +370,10 @@ body
         display: block
 
   &__link
-    display: inline-block
+    display: block
     font-size: 16px
     color: $white
-    padding: 5px 0 37px 0
+    padding: 5px 0 37px
     border-bottom: 3px solid transparent
     text-transform: uppercase
 

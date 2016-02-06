@@ -12,7 +12,7 @@ block content
 				.newsletter__in
 					h2.newsletter__title NEWSLETTER
 					p.newsletter__descr Did you know that we ship to over
-						span 24 different countries
+						span  24 different countries
 					form.subscribe
 						.subscribe__field
 							input.input.input__black(placeholder="Enter your email address")
@@ -27,19 +27,19 @@ block content
 		.top-menu.container
 			.top-menu__left
 				ul.top-menu__list
-					li.top-menu__el.top-menu__el_lang
+					li.top-menu__el
 						a(href="#").top-menu__link us dollar
-						.top-menu__dropdown.top-menu__dropdown_curr
-							span.top-menu__eng Euro
-							span.top-menu__pol Pound Sterling
-							span.top-menu__pol US Dollar
+						.top-menu__dropdown
+							span Euro
+							span Pound Sterling
+							span US Dollar
 					li.top-menu__el
 						a(href="#").top-menu__link english
-						.top-menu__dropdown.top-menu__dropdown_lang
-								span.top-menu__eng
+						.top-menu__dropdown
+								span
 									i.ico.ico_eng
 									| English
-								span.top-menu__pol
+								span
 									i.ico.ico_pol
 									| Polski
 			.top-menu__right
@@ -50,8 +50,7 @@ block content
 						a(href="#").top-menu__link my cart
 							span.top-menu__count 0
 						.top-menu__dropdown
-							.drop-down__lang
-								p.top-menu__eng Your shopping cart is empty!
+							p Your shopping cart is empty!
 					li.top-menu__el
 						a(href="#").top-menu__link checkout
 	//END top-line
@@ -181,6 +180,7 @@ block content
 	//END header
 	//START main
 	main.main
+		//START choose-bike
 		section.choose-bike
 			.title-section
 				h3.title-section__title choose your
@@ -217,7 +217,8 @@ block content
 						i.fa.fa-angle-right
 				.choose-bike__link
 					a(href="#").btn.btn_std view all bikes
-
+		//END choose-bike
+		//START discount
 		section.discount
 			.discount__center
 				p discount up to 75%
@@ -250,8 +251,8 @@ block content
 							span detail
 						li
 							span add to cart
-
-
+		//END DISCOUNT
+		//START new-goods
 		section.new-goods
 			//START title-section
 			.title-section
@@ -371,6 +372,7 @@ block content
 									span.product__price.product__price_new $98.00
 									span.product__price.product__price_old $122.00
 			//END products
+		//END new-goods
 		//START featured
 		section.featured
 			.title-section
@@ -676,7 +678,6 @@ block content
 								img(src="img/partner-5.png").partners__img
 		//END contacts
 	//END main
-
 	//START footer
 	footer.footer
 		.footer__in.container
@@ -716,7 +717,6 @@ block content
 								a(href="#").vertical-list__link Wish List
 							el.vertical-list__el
 								a(href="#").vertical-list__link Newsletter
-
 				.footer__col
 					.vertical-list
 						h4.vertical-list__title our service
