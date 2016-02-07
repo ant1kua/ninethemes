@@ -56,6 +56,12 @@ body { font-family: "Lato"; font-size: 14px; }
 .input_block { width: 100%; padding: 12px 16px; }
 .input_small { width: 100%; padding: 10px 16px; border: none; background-color: #0f0f0f; }
 
+.price { font-family: "Roboto Slab"; font-weight: 300; }
+.price_xl { font-size: 38px; }
+.price_l { font-size: 31px; }
+.price_m { font-size: 17px; }
+.price_s { font-family: Roboto; font-size: 15px; font-weight: 400; }
+
 .btn { display: inline-block; font-size: 14px; color: #fff; background-color: #EF4416; cursor: pointer; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 .btn:hover { background-color: #1e1e1e; }
 .btn_std { text-transform: uppercase; -webkit-border-radius: 30px; border-radius: 30px; padding: 11px 32px; }
@@ -87,14 +93,14 @@ body { font-family: "Lato"; font-size: 14px; }
 .top-menu__left { float: left; }
 .top-menu__right { float: right; }
 .top-menu__list { display: inline-block; }
-.top-menu__el { display: inline-block; border-right: 1px solid #333; }
+.top-menu__el { position: relative; display: inline-block; border-right: 1px solid #333; }
 .top-menu__el:first-child { border-left: 1px solid #333; }
 .top-menu__el:hover .top-menu__dropdown { display: block; }
 .top-menu__link { display: inline-block; padding: 12px 20px 13px 20px; text-transform: uppercase; color: #777; }
 .top-menu__link:hover { color: #ee4415; }
 .top-menu__link:hover .top-menu__count { color: #fff; background-color: #ee4415; border-color: #ee4415; }
 .top-menu__count { display: inline-block; padding: 0 6px 1px 6px; margin-left: 9px; border: 1px solid #333; -webkit-border-radius: 2px; border-radius: 2px; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
-.top-menu__dropdown { position: absolute; padding: 14px 0; background: #fff; -webkit-border-radius: 2px; border-radius: 2px; display: none; }
+.top-menu__dropdown { position: absolute; top: 40px; left: 0; padding: 14px 0; background: #fff; -webkit-border-radius: 2px; border-radius: 2px; display: none; white-space: nowrap; z-index: 50; }
 .top-menu__dropdown span { cursor: pointer; padding: 3px 40px 3px 20px; display: block; }
 .top-menu__dropdown span:hover { background-color: #f7f7f7; }
 .top-menu__dropdown span i { margin: 0 5px 0 0; }
@@ -128,10 +134,11 @@ body { font-family: "Lato"; font-size: 14px; }
 .nav__dropdown ul { display: block; width: 100%; }
 .nav__dropdown li { cursor: pointer; font-size: 15px; line-height: 2; color: #929292; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 .nav__dropdown li:hover { color: #222; }
-.nav_small__dropdown { display: none; -webkit-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; }
-.nav_small__dropdown li { width: 100%; background: #fff; border-bottom: 1px solid #eee; }
-.nav_small__dropdown li:hover { background: #f6f6f6; }
-.nav_small__dropdown a { padding: 10px 20px; display: block; color: #1e1e1e; text-transform: uppercase; }
+
+.nav-small__dropdown { display: none; -webkit-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; }
+.nav-small__dropdown li { width: 100%; background: #fff; border-bottom: 1px solid #eee; }
+.nav-small__dropdown li:hover { background: #f6f6f6; }
+.nav-small__dropdown a { padding: 10px 20px; display: block; color: #1e1e1e; text-transform: uppercase; }
 
 .search { display: inline-block; color: #777; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 .search:hover { color: #fff; }
@@ -154,7 +161,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .promo-item__descr_left { right: 0; left: 45px; }
 .promo-item__descr p { font-size: 17px; margin: 4px 0 46px 0; }
 .promo-item__title { text-transform: uppercase; font-size: 39px; font-weight: 800; }
-.promo-item__color { margin-left: 7px; font-family: Roboto Slab; font-weight: 300; font-size: 31px; line-height: 54px; vertical-align: top; text-transform: none; }
+.promo-item__color { margin-left: 7px; line-height: 54px; vertical-align: top; text-transform: none; }
 .promo-item__color_one { color: #eef1c9; }
 .promo-item__color_two { color: #f1613d; }
 .promo-item__color_three { color: #383f30; }
@@ -196,7 +203,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .product__price { margin: 0 5px; }
 .product__price_new { color: #ee4415; }
 .product__price_old { text-decoration: line-through; color: #929292; }
-.product:hover .product__top img { opacity: 0.3; border-bottom: 3px solid #ee4415; background: rgba(255, 255, 255, 0.7); }
+.product:hover .product__top img { opacity: 0.3; border-bottom: 3px solid #ee4415; background: #fff; }
 .product:hover .product__btns { display: block; }
 
 .social { margin-top: 20px; }
@@ -281,7 +288,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .offers__title { padding-top: 28px; font-family: Playball; font-size: 18px; color: #929292; }
 .offers__model { padding-top: 6px; font-family: Roboto; text-transform: uppercase; font-size: 17px; }
 .offers__model:hover { color: #ed5126; }
-.offers__price { padding-top: 3px; font-family: Roboto; font-size: 15px; color: #929292; }
+.offers__price { padding-top: 3px; color: #929292; }
 .offers__price_new { color: #ed5126; }
 
 .found-bike { padding: 49px 0 45px; background-color: #2e2e2e; }
@@ -315,7 +322,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .featured__info { position: absolute; top: 50%; margin-top: -74px; margin-left: 65px; color: #fff; text-align: center; }
 .featured__brand { padding-top: 15px; font-family: Playball; font-size: 22px; }
 .featured__model { padding-top: 8px; color: #fff; font-family: "Roboto Slab"; font-size: 24px; text-transform: uppercase; }
-.featured__price { padding-top: 6px; font-family: "Roboto Slab"; font-size: 17px; }
+.featured__price { padding-top: 6px; }
 
 .discount { *zoom: 1; position: relative; text-align: left; color: #444; }
 .discount:after { content: " "; display: table; clear: both; }
@@ -326,7 +333,7 @@ body { font-family: "Lato"; font-size: 14px; }
 .discount__info_right { float: right; }
 .discount__name { font-family: Playball; font-size: 22px; }
 .discount__big { font-size: 42px; font-weight: 80; }
-.discount__big span { font-family: "Roboto Slab"; font-size: 38px; font-weight: 300; color: #ed5126; vertical-align: top; }
+.discount__big span { color: #ed5126; vertical-align: top; }
 .discount__details { padding-top: 11px; font-size: 15px; line-height: 2; }
 .discount__details li:before { content: "• "; }
 .discount__buttons { padding-top: 47px; font-size: 14px; font-weight: bold; text-transform: uppercase; color: #1e1e1e; }

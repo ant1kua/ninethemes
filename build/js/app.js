@@ -2191,18 +2191,12 @@ $(document).ready(function() {
 
     // MAGNIFIC-POPUP
     //$('.popup').magnificPopup({
-    //
+
     //});
 
     // CLICK EVENTS
-    $(function() {
-        var buttons = $('.btn_nav');
-
-        buttons.each(function(index, el) {
-            $(el).click(function () {
-                $(this).parent().find('.nav_small__dropdown').fadeToggle();
-            })
-        });
+    $('.btn_nav').click(function() {
+        $('.nav-small__dropdown').fadeToggle();
     });
 
     $('.btn_close').click(function() {

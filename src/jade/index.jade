@@ -1,802 +1,809 @@
 extends _layout
 
 block title
-	title Title of template
+  title Title of template
 
 block content
-	//START popup
-	.popup
-		.popup__bg
-		.popup__in
-			.popup__content
-				.newsletter
-					.newsletter__in
-						h2.newsletter__title NEWSLETTER
-						p.newsletter__descr Did you know that we ship to over
-							span  24 different countries
-						form.subscribe
-							.subscribe__field
-								input.input.input_block(placeholder="Enter your email address")
-							.subscribe__action
-								button.btn.btn_square(type="submit")
-									i.fa.fa-envelope
-									| Subscribe
-					span.btn.btn_close &times;
-	//START popup
-	//START top-line
-	.top-line
-		.top-menu.container
-			.top-menu__left
-				ul.top-menu__list
-					li.top-menu__el
-						a(href="#").top-menu__link us dollar
-						.top-menu__dropdown
-							span Euro
-							span Pound Sterling
-							span US Dollar
-					li.top-menu__el
-						a(href="#").top-menu__link english
-						.top-menu__dropdown
-								span
-									i.ico.ico_eng
-									| English
-								span
-									i.ico.ico_pol
-									| Polski
-			.top-menu__right
-				ul.top-menu__list
-					li.top-menu__el
-						a(href="#").top-menu__link my account
-					li.top-menu__el
-						a(href="#").top-menu__link my cart
-							span.top-menu__count 0
-						.top-menu__dropdown
-							p Your shopping cart is empty!
-					li.top-menu__el
-						a(href="#").top-menu__link checkout
-	//END top-line
-	//START header
-	header.header
-		.header__in.container
-			.header__left
-				.logo
-					a(href="#").logo__link
-						img(src="img/logo-goshop.png")
-			.header__right
-				//START nav
-				nav.nav
-					ul.nav__list
-						li.nav__el
-							a.nav__link.nav__link_active home
-						li.nav__el
-							a.nav__link bikes
-							.nav__dropdown
-								div
-									a(href="#") cameras
-									ul
-										li Components
-										li Mice and Trackballs
-										li Monitors
-										li Memory
-										li Motherboard
-										li Printers
-										li PC
-								div
-									a(href="#") phones
-									ul
-										li Scanners
-										li Software
-										li Test test
-										li Laptops & Notebooks
-										li PC
-										li Mp3
-										li Mac
-								div
-									a(href="#") scanners
-									ul
-										li Softare
-										li Test
-										li Web-cameras
-										li Windows
-										li Test
-										li PC
-										li Printers
-								div
-									a(href="#") software
-									ul
-										li Cameras
-										li Components
-										li Scanners
-										li Software
-										li Mice and Trackballs
-										li Macs
-										li Printers
-						li.nav__el
-							a.nav__link clothing
-						li.nav__el
-							a.nav__link components
-						li.nav__el
-							a.nav__link accessories
-						li.nav__el
-							a.nav__link blog
-						li.nav__el
-							a.search
-								i.search__ico.fa.fa-search
-				//END nav
-				//START nav_small
-				.nav_small
-					span.btn_nav
-						i.fa.fa-reorder
-						|navigation
-					.nav_small__dropdown
-						ul
-							li
-								a(href="#") bikes
-							li
-								a(href="#") clothing
-							li
-								a(href="#") components
-							li
-								a(href="#") accessories
-							li
-								a(href="#") blog
-				//END nav_small
-		//START promo
-		.promo
-			.promo__big
-				img(src="img/goshop-2.png").promo__img
-				.promo__small
-					img(src="img/goshop-3.png").promo__img
-			.promo__btn
-				a(href="#").promo__link
-		//END promo
-		//START promo-item
-		.promo-item
-			.promo-item__el
-				img(src="img/banner-01.png").promo-item__img
-				.promo-item__descr.promo-item__descr_right
-					h3.promo-item__title men
-						span.promo-item__color.promo-item__color_one $350
-					p Bikes, Clothing, and many more...
-					span.btn.btn_std shop now
+  //START popup
+  .popup
+    .popup__bg
+    .popup__in
+      .popup__content
+        .newsletter
+          .newsletter__in
+            h2.newsletter__title NEWSLETTER
+            p.newsletter__descr Did you know that we ship to over
+              span  24 different countries
+            form.subscribe
+              .subscribe__field
+                input.input.input_block(placeholder="Enter your email address")
+              .subscribe__action
+                button.btn.btn_square(type="submit")
+                  i.fa.fa-envelope
+                  | Subscribe
+          span.btn.btn_close &times;
+  //START popup
+  //START top-line
+  .top-line
+    .top-menu.container
+      .top-menu__left
+        ul.top-menu__list
+          li.top-menu__el
+            a(href="#").top-menu__link us dollar
+            .top-menu__dropdown
+              span Euro
+              span Pound Sterling
+              span US Dollar
+          li.top-menu__el
+            a(href="#").top-menu__link english
+            .top-menu__dropdown
+              span
+                i.ico.ico_eng
+                | English
+              span
+                i.ico.ico_pol
+                | Polski
+      .top-menu__right
+        ul.top-menu__list
+          li.top-menu__el
+            a(href="#").top-menu__link my account
+          li.top-menu__el
+            a(href="#").top-menu__link my cart
+              span.top-menu__count 0
+            .top-menu__dropdown
+              p Your shopping cart is empty!
+          li.top-menu__el
+            a(href="#").top-menu__link checkout
+  //END top-line
+  //START header
+  header.header
+    .header__in.container
+      .header__left
+        .logo
+          a(href="#").logo__link
+            img(src="img/logo-goshop.png")
+      .header__right
+        //START nav
+        nav.nav
+          ul.nav__list
+            li.nav__el
+              a.nav__link.nav__link_active home
+            li.nav__el
+              a.nav__link bikes
+              .nav__dropdown
+                div
+                  a(href="#") cameras
+                  ul
+                    li Components
+                    li Mice and Trackballs
+                    li Monitors
+                    li Memory
+                    li Motherboard
+                    li Printers
+                    li PC
+                div
+                  a(href="#") phones
+                  ul
+                    li Scanners
+                    li Software
+                    li Test test
+                    li Laptops & Notebooks
+                    li PC
+                    li Mp3
+                    li Mac
+                div
+                  a(href="#") scanners
+                  ul
+                    li Softare
+                    li Test
+                    li Web-cameras
+                    li Windows
+                    li Test
+                    li PC
+                    li Printers
+                div
+                  a(href="#") software
+                  ul
+                    li Cameras
+                    li Components
+                    li Scanners
+                    li Software
+                    li Mice and Trackballs
+                    li Macs
+                    li Printers
+            li.nav__el
+              a.nav__link clothing
+            li.nav__el
+              a.nav__link components
+            li.nav__el
+              a.nav__link accessories
+            li.nav__el
+              a.nav__link blog
+            li.nav__el
+              a.search
+                i.search__ico.fa.fa-search
+        //END nav
+        //START nav_small
+        .nav-small
+          span.btn_nav
+            i.fa.fa-reorder
+            | navigation
+          .nav-small__dropdown
+            ul
+              li
+                a(href="#") bikes
+              li
+                a(href="#") clothing
+              li
+                a(href="#") components
+              li
+                a(href="#") accessories
+              li
+                a(href="#") blog
+        //END nav_small
+    //START promo
+    .promo
+      .promo__big
+        img(src="img/goshop-2.png").promo__img
+        .promo__small
+          img(src="img/goshop-3.png").promo__img
+      .promo__btn
+        a(href="#").promo__link
+    //END promo
+    //START promo-item
+    .promo-item
+      .promo-item__el
+        img(src="img/banner-01.png").promo-item__img
+        .promo-item__descr.promo-item__descr_right
+          h3.promo-item__title men
+            span.price.price_l.promo-item__color.promo-item__color_one $350
+          p Bikes, Clothing, and many more...
+          span.btn.btn_std shop now
 
-			.promo-item__el
-				img(src="img/banner-02.png").promo-item__img
-				.promo-item__descr.promo-item__descr_center
-					h3.promo-item__title women
-						span.promo-item__color.promo-item__color_two $250
-					p Bikes, Clothing, Accessories and many more...
-					span.btn.btn_std shop now
+      .promo-item__el
+        img(src="img/banner-02.png").promo-item__img
+        .promo-item__descr.promo-item__descr_center
+          h3.promo-item__title women
+            span.price.price_l.promo-item__color.promo-item__color_two $250
+          p Bikes, Clothing, Accessories and many more...
+          span.btn.btn_std shop now
 
-			.promo-item__el
-				img(src="img/banner-03.png").promo-item__img
-				.promo-item__descr.promo-item__descr_left
-					h3.promo-item__title.promo-item__color_three bike's
-						span.promo-item__color.promo-item__color_one $550
-					p.promo-item__color_four All Famous Bike Brand Only for you...
-					span.btn.btn_std shop now
-		//END promo-item
+      .promo-item__el
+        img(src="img/banner-03.png").promo-item__img
+        .promo-item__descr.promo-item__descr_left
+          h3.promo-item__title.promo-item__color_three bike's
+            span.price.price_l.promo-item__color.promo-item__color_one $550
+          p.promo-item__color_four All Famous Bike Brand Only for you...
+          span.btn.btn_std shop now
+    //END promo-item
 
 
-	//END header
-	//START main
-	main.main
-		//START choose-bike
-		section.choose-bike
-			.title-section
-				h3.title-section__title choose your
-					span.title-section__orange  bike
-				p Search by type of bike
+  //END header
+  //START main
+  main.main
+    //START choose-bike
+    section.choose-bike
+      .title-section
+        h3.title-section__title choose your
+          span.title-section__orange  bike
+        p Search by type of bike
 
-			.choose-bike__in.container
-				ul.choose-bike__round
-					li.choose-bike__item
-						.choose-bike__img
-							img(src="img/bike-1.png")
-						a(href="#")
-							p.choose-bike__title bmx bikes
-						p.choose-bike__price Start from
-							span  $399.00
-					li.choose-bike__item
-						.choose-bike__img
-							img(src="img/bike-2.png")
-						a(href="#")
-							p.choose-bike__title mountain bikes
-						p.choose-bike__price Start from
-							span  $599.00
-					li.choose-bike__item
-						.choose-bike__img
-							img(src="img/bike-3.png")
-						a(href="#")
-							p.choose-bike__title road bikes
-						p.choose-bike__price Start from
-							span  $299.00
-				span.choose-bike__buttons
-					span.choose-bike__btn.choose-bike__btn_prev
-						i.fa.fa-angle-left
-					span.choose-bike__btn.choose-bike__btn_next
-						i.fa.fa-angle-right
-				.choose-bike__link
-					a(href="#").btn.btn_std view all bikes
+      .choose-bike__in.container
+        ul.choose-bike__round
+          li.choose-bike__item
+            .choose-bike__img
+              img(src="img/bike-1.png")
+            a(href="#")
+              p.choose-bike__title bmx bikes
+            p.choose-bike__price Start from
+              span.price.price_s  $399.00
+          li.choose-bike__item
+            .choose-bike__img
+              img(src="img/bike-2.png")
+            a(href="#")
+              p.choose-bike__title mountain bikes
+            p.choose-bike__price Start from
+              span.price.price_s  $599.00
+          li.choose-bike__item
+            .choose-bike__img
+              img(src="img/bike-3.png")
+            a(href="#")
+              p.choose-bike__title road bikes
+            p.choose-bike__price Start from
+              span.price.price_s  $299.00
+        span.choose-bike__buttons
+          span.choose-bike__btn.choose-bike__btn_prev
+            i.fa.fa-angle-left
+          span.choose-bike__btn.choose-bike__btn_next
+            i.fa.fa-angle-right
+        .choose-bike__link
+          a(href="#").btn.btn_std view all bikes
 
-		//END choose-bike
-		//START discount
-		section.discount
-			.discount__center
-				p discount up to 75%
-			.discount__left
-				.discount__info.discount__info_right
-					h5.discount__name Waterproof Jacket
-					p.discount__big MEN
-						span  $350
-					ul.discount__details
-						li Integrated i-Lume LED rear light
-						li Optional hood available separately
-						li Breathability rating 15,000
-					ul.discount__buttons
-						li
-							span detail
-						li
-							span add to cart
+    //END choose-bike
+    //START discount
+    section.discount
+      .discount__center
+        p discount up to 75%
+      .discount__left
+        .discount__info.discount__info_right
+          h5.discount__name Waterproof Jacket
+          p.discount__big MEN
+            span.price.price_xl  $350
+          ul.discount__details
+            li Integrated i-Lume LED rear light
+            li Optional hood available separately
+            li Breathability rating 15,000
+          ul.discount__buttons
+            li
+              span detail
+            li
+              span add to cart
 
-			.discount__right
-				.discount__info
-					h5.discount__name Waterproof Jacket
-					p.discount__big WOMEN
-						span  $350
-					ul.discount__details
-						li Integrated i-Lume LED rear light
-						li Optional hood available separately
-						li Breathability rating 15,000
-					ul.discount__buttons
-						li
-							span detail
-						li
-							span add to cart
-		//END DISCOUNT
-		//START new-goods
-		section.new-goods
-			//START title-section
-			.title-section
-				h3.title-section__title
-					span.title-section__orange new
-					| arrivals
-				p Trending products
-			//END title-section
-			//START filter
-			.filter
-				ul.filter__list
-					li.filter__el
-						a(href="#").filter__link.filter__link_active clothing
-					li.filter__el
-						a(href="#").filter__link bikes
-					li.filter__el
-						a(href="#").filter__link components
-					li.filter__el
-						a(href="#").filter__link accessories
-					li.filter__el
-						a(href="#").filter__link protections
-			//END filter
-			//START products
-			.products
-				ul.products__list
-					li.products__el
-						//START product
-						.product
-							.product__top
-								a(href="#")
-									img(src="img/product-1.jpg")
-								.product__btns
-									.btn-group
-										ul
-											li
-												span.btn.btn_white
-													i.fa.fa-exchange
-											li
-												span.btn.btn_white
-													i.fa.fa-heart
-											li
-												span.btn.btn_white
-													i.fa.fa-shopping-cart
-							.product__bottom
-								h4 apple cinema 30"
-								p
-									span.product__price.product__price_new $110.00
-									span.product__price.product__price_old $122.00
-						//END product
-					li.products__el
-						//START product
-						.product
-							.product__top
-								a(href="#")
-									img(src="img/product-2.jpg")
-								.product__btns
-									.btn-group
-										ul
-											li
-												span.btn.btn_white
-													i.fa.fa-exchange
-											li
-												span.btn.btn_white
-													i.fa.fa-heart
-											li
-												span.btn.btn_white
-													i.fa.fa-shopping-cart
-							.product__bottom
-								h4 hp lp3065
-								p
-									span.product__price.product__price_new $122.00
-						//END product
-					li.products__el
-						//START product
-						.product
-							.product__top
-								a(href="#")
-									img(src="img/product-3.jpg")
-								.product__btns
-									.btn-group
-										ul
-											li
-												span.btn.btn_white
-													i.fa.fa-exchange
-											li
-												span.btn.btn_white
-													i.fa.fa-heart
-											li
-												span.btn.btn_white
-													i.fa.fa-shopping-cart
-							.product__bottom
-								h4 palm treo pro
-								p
-									span.product__price.product__price_new $337.99
-						//END product
-					li.products__el
-						//START product
-						.product
-							.product__top
-								a(href="#")
-									img(src="img/product-4.jpg")
-								.product__btns
-									.btn-group
-										ul
-											li
-												span.btn.btn_white
-													i.fa.fa-exchange
-											li
-												span.btn.btn_white
-													i.fa.fa-heart
-											li
-												span.btn.btn_white
-													i.fa.fa-shopping-cart
-							.product__bottom
-								h4 canon eos 5d
-								p
-									span.product__price.product__price_new $98.00
-									span.product__price.product__price_old $122.00
-			//END products
-		//END new-goods
-		//START featured
-		section.featured
-			.title-section
-				h3.title-section__title featured products
-				p Our featured products here
-			.featured__in
-				.featured__item
-					.featured__img
-						img(src="img/featured-product-1.png")
-					.featured__descr
-						.featured__info
-							span.btn.btn_cart
-								i.fa.fa-shopping-cart
-							p.featured__brand Cycling Shoes
-							a(href="#").featured__model sidebike m065 pro
-							p.featured__price $250.00
-				.featured__item
-					.featured__img
-						img(src="img/featured-product-2.png")
-					.featured__descr
-						.featured__info
-							span.btn.btn_cart
-								i.fa.fa-shopping-cart
-							p.featured__brand Cycling Shoes
-							a(href="#").featured__model sidebike m065 pro
-							p.featured__price $250.00
-				.featured__item
-					.featured__img
-						img(src="img/featured-product-3.png")
-					.featured__descr
-						.featured__info
-							span.btn.btn_cart
-								i.fa.fa-shopping-cart
-							p.featured__brand Cycling Shoes
-							a(href="#").featured__model sidebike m065 pro
-							p.featured__price $250.00
-				.featured__item
-					.featured__img
-						img(src="img/featured-product-4.png")
-					.featured__descr
-						.featured__info
-							span.btn.btn_cart
-								i.fa.fa-shopping-cart
-							p.featured__brand Cycling Shoes
-							a(href="#").featured__model sidebike m065 pro
-							p.featured__price $250.00
-				.featured__item
-					.featured__img
-						img(src="img/featured-product-5.png")
-					.featured__descr
-						.featured__info
-							span.btn.btn_cart
-								i.fa.fa-shopping-cart
-							p.featured__brand Cycling Shoes
-							a(href="#").featured__model sidebike m065 pro
-							p.featured__price $250.00
-				.featured__item
-					.featured__img
-						img(src="img/featured-product-6.png")
-					.featured__descr
-						.featured__info
-							span.btn.btn_cart
-								i.fa.fa-shopping-cart
-							p.featured__brand Cycling Shoes
-							a(href="#").featured__model sidebike m065 pro
-							p.featured__price $250.00
-				.featured__item
-					.featured__img
-						img(src="img/featured-product-7.png")
-					.featured__descr
-						.featured__info
-							span.btn.btn_cart
-								i.fa.fa-shopping-cart
-							p.featured__brand Cycling Shoes
-							a(href="#").featured__model sidebike m065 pro
-							p.featured__price $250.00
-		//END featured
-		//START found-bike
-		section.found-bike
-			.found-bike__in.container
-				.found-bike__left
-					p.found-bike__header Found your
-						span  Dream Bike
-						| ? Why wait
-					p.found-bike__descr Get it now with a 0% finance deal from GoShop Fashion..
-				.found-bike__right
-					span.btn.btn_bg-none.btn_big discover
-					span.btn.btn_std.btn_big purchase
-		//END found-bike
-		//START limited
-		section.limited
-			.title-section
-				h3.title-section__title carbon fiber
-					span.title-section__orange  cervello
-				p Limited time offer only on Go Shop
-			.limited__countdown
-				.countdown
-			.limited__btn
-				span.btn.btn_std add to cart
-		//END limited
-		//START reviews
-		section.reviews
-			.reviews__in.container
-				.owl-reviews
-					.reviews__item
-						h2.reviews__title they says
-						p.reviews__second-title Happy clients
-						p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
-						p.reviews__sig
-							span jesica wilson
-							|  - France
-					.reviews__item
-						h2.reviews__title they says
-						p.reviews__second-title Happy clients
-						p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
-						p.reviews__sig
-							span artur
-							|  - Franc e
-					.reviews__item
-						h2.reviews__title they says
-						p.reviews__second-title Happy clients
-						p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
-						p.reviews__sig
-							span nine-thmes
-							|  - France
-		//END reviews
-		//START offers
-		section.offers.container
-			.title-section
-				h3.title-section__title special offers
-				p Special price only this month
-			ul.offers__list
-				li.offers__el
-					.offers__item
-						.offers__left
-							a(href="#")
-								img(src="img/product-1-xs.png")
-						.offers__right
-							p.offers__title Mountian bike
-							p
-								a.offers__model gt sensor comp 27.5
-							p.offers__price Price:
-								span.offers__price_new  $299.00
-								s
-									span $599.00
-				li.offers__el
-					.offers__item
-						.offers__left
-							a(href="#")
-								img(src="img/product-2-xs.png")
-						.offers__right
-							p.offers__title Mountian bike
-							p
-								a.offers__model breezer squall 1.0
-							p.offers__price Price:
-								span.offers__price_new  $299.00
-								s
-									span $599.00
-				li.offers__el
-					.offers__item
-						.offers__left
-							a(href="#")
-								img(src="img/product-3-xs.png")
-						.offers__right
-							p.offers__title Mountian bike
-							p
-								a.offers__model gt sensor comp 27.5
-							p.offers__price Price:
-								span.offers__price_new  $299.00
-								s
-									span $599.00
-				li.offers__el
-					.offers__item
-						.offers__left
-							a(href="#")
-								img(src="img/product-3-xs.png")
-						.offers__right
-							p.offers__title Mountian bike
-							p
-								a.offers__model gt sensor comp 27.5
-							p.offers__price Price:
-								span.offers__price_new  $299.00
-								s
-									span $599.00
-				li.offers__el
-					.offers__item
-						.offers__left
-							a(href="#")
-								img(src="img/product-1-xs.png")
-						.offers__right
-							p.offers__title Mountian bike
-							p
-								a.offers__model breezer squall 1.0
-							p.offers__price Price:
-								span.offers__price_new  $299.00
-								s
-									span $599.00
-				li.offers__el
-					.offers__item
-						.offers__left
-							a(href="#")
-								img(src="img/product-2-xs.png")
-						.offers__right
-							p.offers__title Mountian bike
-							p
-								a.offers__model gt sensor comp 27.5
-							p.offers__price Price:
-								span.offers__price_new  $299.00
-								s
-									span $599.00
-		//END offers
-		//START news
-		section.news
-			.title-section
-				h3.title-section__title latest news
-				p News from our blog
-			ul.news__list.container
-				li.news__el
-					.news__item
-						.news__left
-							.news__date
-								p.news__big 16
-								p.news__small sep
-							.news__count
-								p.news__big
-									i.fa.fa-comments
-								p.news__small 3
-						.news__right
-							.news__tags
-								ul
-									li Fastor
-									li Beatiful
-							.news__title
-								a(href="#") Donec ut nunc sit amet urna aliquet
-							.news__bottom
-								span.news__more read more &rarr;
-				li.news__el
-					.news__item
-						.news__left
-							.news__date
-								p.news__big 16
-								p.news__small sep
-							.news__count
-								p.news__big
-									i.fa.fa-comments
-								p.news__small 1
-						.news__right
-							.news__tags
-								ul
-									li Fastor
-									li Buy it
-							.news__title
-								a(href="#") Nulla dictum consequat lorem ac vehicula
-							.news__bottom
-								span.news__more read more &rarr;
-				li.news__el
-					.news__item
-						.news__left
-							.news__date
-								p.news__big 12
-								p.news__small sep
-							.news__count
-								p.news__big
-									i.fa.fa-comments
-								p.news__small 0
-						.news__right
-							.news__tags
-								ul
-									li Fastor
-									li Passion
-							.news__title
-								a(href="#") Etiam ac aliquet ex nec volutpat orci
-							.news__bottom
-								span.news__more read more &rarr;
-		//END news
-		//START contacts
-		section.contacts
-			.contacts__box
-				img(src="img/logo-footer.png" alt="logo").contacts__logo
-				p 148 Parramatta Road Stanmore NSW 2048, New York City
-				p Call Sales & Workshop : (02) 9567 1999
-				img(src="img/bg-footer-title.png" alt="")
-				h3 opening hours
-				p Monday to Wednesday from 10.00AM - 17.00PM
-				p Thursday to Sunday from 11.00AM - 19.00PM
-			.partners
-				.partners__in.container
-					ul.partners__list
-						li.partners__el
-							a(href="")
-								img(src="img/partner-1.png").partners__img
-						li.partners__el
-							a(href="")
-								img(src="img/partner-2.png").partners__img
-						li.partners__el
-							a(href="")
-								img(src="img/partner-3.png").partners__img
-						li.partners__el
-							a(href="")
-								img(src="img/partner-4.png").partners__img
-						li.partners__el
-							a(href="")
-								img(src="img/partner-5.png").partners__img
-		//END contacts
-	//END main
-	//START footer
-	footer.footer
-		.footer__in.container
-			.footer__row
-				.footer__col
-					.logo
-						a(href="#").logo__link
-							img(src="img/logo-footer.png")
-						.logo__descr
-							p Ecommerce OC Template
-					.social
-						ul.social__list
-							li.social__el
-								a(href="#").social__link
-									i.fa.fa-twitter
-							li.social__el
-								a(href="#").social__link
-									i.fa.fa-facebook
-							li.social__el
-								a(href="#").social__link
-									i.fa.fa-youtube-play
-							li.social__el
-								a(href="#").social__link
-									i.fa.fa-github
-							li.social__el
-								a(href="#").social__link
-									i.fa.fa-behance
-				.footer__col
-					.vertical-list
-						h4.vertical-list__title my account
-						ul.vertical-list__item
-							el.vertical-list__el
-								a(href="#").vertical-list__link My account
-							el.vertical-list__el
-								a(href="#").vertical-list__link Order History
-							el.vertical-list__el
-								a(href="#").vertical-list__link Wish List
-							el.vertical-list__el
-								a(href="#").vertical-list__link Newsletter
-				.footer__col
-					.vertical-list
-						h4.vertical-list__title our service
-						ul.vertical-list__item
-							el.vertical-list__el
-								a(href="#").vertical-list__link Shipping Return
-							el.vertical-list__el
-								a(href="#").vertical-list__link Contact us
-							el.vertical-list__el
-								a(href="#").vertical-list__link Faq
-							el.vertical-list__el
-								a(href="#").vertical-list__link Affiliates
-							el.vertical-list__el
-								a(href="#").vertical-list__link Specials
-				.footer__col
-					.vertical-list
-						h4.vertical-list__title newsletter
-						ul.vertical-list__item
-							el.vertical-list__el
-								p Lorem ipsum dolor sit amet conseret adipiscing elit sed diam nonunem.
-							el.vertical-list__el
-								form.subscribe.subscribe_footer
-									.subscribe__field
-										input.input.input_small(placeholder="Your email")
-									.subscribe__action
-										button.btn.btn_small(type="submit")
-											i.fa.fa-envelope
-			.owl-footer.container
-				.owl__item
-					a(href="#")
-						img(src="img/payment-1.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-2.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-4.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-3.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-5.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-6.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-8.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-7.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-2.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-3.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-4.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-5.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-6.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-8.png")
-				.owl__item
-					a(href="#")
-						img(src="img/payment-7.png")
+      .discount__right
+        .discount__info
+          h5.discount__name Waterproof Jacket
+          p.discount__big WOMEN
+            span.price.price_xl  $350
+          ul.discount__details
+            li Integrated i-Lume LED rear light
+            li Optional hood available separately
+            li Breathability rating 15,000
+          ul.discount__buttons
+            li
+              span detail
+            li
+              span add to cart
+    //END DISCOUNT
+    //START new-goods
+    section.new-goods
+      //START title-section
+      .title-section
+        h3.title-section__title
+          span.title-section__orange new
+          | arrivals
+        p Trending products
+      //END title-section
+      //START filter
+      .filter
+        ul.filter__list
+          li.filter__el
+            a(href="#").filter__link.filter__link_active clothing
+          li.filter__el
+            a(href="#").filter__link bikes
+          li.filter__el
+            a(href="#").filter__link components
+          li.filter__el
+            a(href="#").filter__link accessories
+          li.filter__el
+            a(href="#").filter__link protections
+      //END filter
+      //START products
+      .products
+        ul.products__list
+          li.products__el
+            //START product
+            .product
+              .product__top
+                a(href="#")
+                  img(src="img/product-1.jpg")
+                .product__btns
+                  .btn-group
+                    ul
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-exchange
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-heart
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-shopping-cart
+              .product__bottom
+                h4 apple cinema 30"
+                p
+                  span.price.price_s.product__price.product__price_new $110.00
+                  span.price.price_s.product__price.product__price_old $122.00
+            //END product
+          li.products__el
+            //START product
+            .product
+              .product__top
+                a(href="#")
+                  img(src="img/product-2.jpg")
+                .product__btns
+                  .btn-group
+                    ul
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-exchange
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-heart
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-shopping-cart
+              .product__bottom
+                h4 hp lp3065
+                p
+                  span.price.price_s.product__price.product__price_new $122.00
+            //END product
+          li.products__el
+            //START product
+            .product
+              .product__top
+                a(href="#")
+                  img(src="img/product-3.jpg")
+                .product__btns
+                  .btn-group
+                    ul
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-exchange
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-heart
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-shopping-cart
+              .product__bottom
+                h4 palm treo pro
+                p
+                  span.price.price_s.product__price.product__price_new $337.99
+            //END product
+          li.products__el
+            //START product
+            .product
+              .product__top
+                a(href="#")
+                  img(src="img/product-4.jpg")
+                .product__btns
+                  .btn-group
+                    ul
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-exchange
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-heart
+                      li
+                        span.btn.btn_white
+                          i.fa.fa-shopping-cart
+              .product__bottom
+                h4 canon eos 5d
+                p
+                  span.price.price_s.product__price.product__price_new $98.00
+                  span.price.price_s.product__price.product__price_old $122.00
+      //END products
+    //END new-goods
+    //START featured
+    section.featured
+      .title-section
+        h3.title-section__title featured products
+        p Our featured products here
+      .featured__in
+        .featured__item
+          .featured__img
+            img(src="img/featured-product-1.png")
+          .featured__descr
+            .featured__info
+              span.btn.btn_cart
+                i.fa.fa-shopping-cart
+              p.featured__brand Cycling Shoes
+              a(href="#").featured__model sidebike m065 pro
+              p.featured__price
+               span.price.price_m $250.00
+        .featured__item
+          .featured__img
+            img(src="img/featured-product-2.png")
+          .featured__descr
+            .featured__info
+              span.btn.btn_cart
+                i.fa.fa-shopping-cart
+              p.featured__brand Cycling Shoes
+              a(href="#").featured__model sidebike m065 pro
+              p.featured__price
+                span.price.price_m $250.00
+        .featured__item
+          .featured__img
+            img(src="img/featured-product-3.png")
+          .featured__descr
+            .featured__info
+              span.btn.btn_cart
+                i.fa.fa-shopping-cart
+              p.featured__brand Cycling Shoes
+              a(href="#").featured__model sidebike m065 pro
+              p.featured__price
+                span.price.price_m $250.00
+        .featured__item
+          .featured__img
+            img(src="img/featured-product-4.png")
+          .featured__descr
+            .featured__info
+              span.btn.btn_cart
+                i.fa.fa-shopping-cart
+              p.featured__brand Cycling Shoes
+              a(href="#").featured__model sidebike m065 pro
+              p.featured__price
+                span.price.price_m $250.00
+        .featured__item
+          .featured__img
+            img(src="img/featured-product-5.png")
+          .featured__descr
+            .featured__info
+              span.btn.btn_cart
+                i.fa.fa-shopping-cart
+              p.featured__brand Cycling Shoes
+              a(href="#").featured__model sidebike m065 pro
+              p.featured__price
+                span.price.price_m $250.00
+        .featured__item
+          .featured__img
+            img(src="img/featured-product-6.png")
+          .featured__descr
+            .featured__info
+              span.btn.btn_cart
+                i.fa.fa-shopping-cart
+              p.featured__brand Cycling Shoes
+              a(href="#").featured__model sidebike m065 pro
+              p.featured__price
+                span.price.price_m $250.00
+        .featured__item
+          .featured__img
+            img(src="img/featured-product-7.png")
+          .featured__descr
+            .featured__info
+              span.btn.btn_cart
+                i.fa.fa-shopping-cart
+              p.featured__brand Cycling Shoes
+              a(href="#").featured__model sidebike m065 pro
+              p.featured__price
+                span.price.price_m $250.00
+    //END featured
+    //START found-bike
+    section.found-bike
+      .found-bike__in.container
+        .found-bike__left
+          p.found-bike__header Found your
+            span  Dream Bike
+            | ? Why wait
+          p.found-bike__descr Get it now with a 0% finance deal from GoShop Fashion..
+        .found-bike__right
+          span.btn.btn_bg-none.btn_big discover
+          span.btn.btn_std.btn_big purchase
+    //END found-bike
+    //START limited
+    section.limited
+      .title-section
+        h3.title-section__title carbon fiber
+          span.title-section__orange  cervello
+        p Limited time offer only on Go Shop
+      .limited__countdown
+        .countdown
+      .limited__btn
+        span.btn.btn_std add to cart
+    //END limited
+    //START reviews
+    section.reviews
+      .reviews__in.container
+        .owl-reviews
+          .reviews__item
+            h2.reviews__title they says
+            p.reviews__second-title Happy clients
+            p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
+            p.reviews__sig
+              span jesica wilson
+              |  - France
+          .reviews__item
+            h2.reviews__title they says
+            p.reviews__second-title Happy clients
+            p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
+            p.reviews__sig
+              span artur
+              |  - Franc e
+          .reviews__item
+            h2.reviews__title they says
+            p.reviews__second-title Happy clients
+            p.reviews__quote "Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”
+            p.reviews__sig
+              span nine-thmes
+              |  - France
+    //END reviews
+    //START offers
+    section.offers.container
+      .title-section
+        h3.title-section__title special offers
+        p Special price only this month
+      ul.offers__list
+        li.offers__el
+          .offers__item
+            .offers__left
+              a(href="#")
+                img(src="img/product-1-xs.png")
+            .offers__right
+              p.offers__title Mountian bike
+              p
+                a.offers__model gt sensor comp 27.5
+              p.offers__price Price:
+                span.offers__price_new.price.price_s  $299.00
+                s
+                  span.price.price_s $599.00
+        li.offers__el
+          .offers__item
+            .offers__left
+              a(href="#")
+                img(src="img/product-2-xs.png")
+            .offers__right
+              p.offers__title Mountian bike
+              p
+                a.offers__model breezer squall 1.0
+              p.offers__price Price:
+                span.offers__price_new.price.price_s  $299.00
+                s
+                  span.price.price_s $599.00
+        li.offers__el
+          .offers__item
+            .offers__left
+              a(href="#")
+                img(src="img/product-3-xs.png")
+            .offers__right
+              p.offers__title Mountian bike
+              p
+                a.offers__model gt sensor comp 27.5
+              p.offers__price Price:
+                span.offers__price_new.price.price_s  $299.00
+                s
+                  span.price.price_s $599.00
+        li.offers__el
+          .offers__item
+            .offers__left
+              a(href="#")
+                img(src="img/product-3-xs.png")
+            .offers__right
+              p.offers__title Mountian bike
+              p
+                a.offers__model gt sensor comp 27.5
+              p.offers__price Price:
+                span.offers__price_new.price.price_s  $299.00
+                s
+                  span.price.price_s $599.00
+        li.offers__el
+          .offers__item
+            .offers__left
+              a(href="#")
+                img(src="img/product-1-xs.png")
+            .offers__right
+              p.offers__title Mountian bike
+              p
+                a.offers__model breezer squall 1.0
+              p.offers__price Price:
+                span.offers__price_new.price.price_s  $299.00
+                s
+                  span.price.price_s $599.00
+        li.offers__el
+          .offers__item
+            .offers__left
+              a(href="#")
+                img(src="img/product-2-xs.png")
+            .offers__right
+              p.offers__title Mountian bike
+              p
+                a.offers__model gt sensor comp 27.5
+              p.offers__price Price:
+                span.offers__price_new.price.price_s  $299.00
+                s
+                  span.price.price_s $599.00
+    //END offers
+    //START news
+    section.news
+      .title-section
+        h3.title-section__title latest news
+        p News from our blog
+      ul.news__list.container
+        li.news__el
+          .news__item
+            .news__left
+              .news__date
+                p.news__big 16
+                p.news__small sep
+              .news__count
+                p.news__big
+                  i.fa.fa-comments
+                p.news__small 3
+            .news__right
+              .news__tags
+                ul
+                  li Fastor
+                  li Beatiful
+              .news__title
+                a(href="#") Donec ut nunc sit amet urna aliquet
+              .news__bottom
+                span.news__more read more &rarr;
+        li.news__el
+          .news__item
+            .news__left
+              .news__date
+                p.news__big 16
+                p.news__small sep
+              .news__count
+                p.news__big
+                  i.fa.fa-comments
+                p.news__small 1
+            .news__right
+              .news__tags
+                ul
+                  li Fastor
+                  li Buy it
+              .news__title
+                a(href="#") Nulla dictum consequat lorem ac vehicula
+              .news__bottom
+                span.news__more read more &rarr;
+        li.news__el
+          .news__item
+            .news__left
+              .news__date
+                p.news__big 12
+                p.news__small sep
+              .news__count
+                p.news__big
+                  i.fa.fa-comments
+                p.news__small 0
+            .news__right
+              .news__tags
+                ul
+                  li Fastor
+                  li Passion
+              .news__title
+                a(href="#") Etiam ac aliquet ex nec volutpat orci
+              .news__bottom
+                span.news__more read more &rarr;
+    //END news
+    //START contacts
+    section.contacts
+      .contacts__box
+        img(src="img/logo-footer.png" alt="logo").contacts__logo
+        p 148 Parramatta Road Stanmore NSW 2048, New York City
+        p Call Sales & Workshop : (02) 9567 1999
+        img(src="img/bg-footer-title.png" alt="")
+        h3 opening hours
+        p Monday to Wednesday from 10.00AM - 17.00PM
+        p Thursday to Sunday from 11.00AM - 19.00PM
+      .partners
+        .partners__in.container
+          ul.partners__list
+            li.partners__el
+              a(href="")
+                img(src="img/partner-1.png").partners__img
+            li.partners__el
+              a(href="")
+                img(src="img/partner-2.png").partners__img
+            li.partners__el
+              a(href="")
+                img(src="img/partner-3.png").partners__img
+            li.partners__el
+              a(href="")
+                img(src="img/partner-4.png").partners__img
+            li.partners__el
+              a(href="")
+                img(src="img/partner-5.png").partners__img
+    //END contacts
+  //END main
+  //START footer
+  footer.footer
+    .footer__in.container
+      .footer__row
+        .footer__col
+          .logo
+            a(href="#").logo__link
+              img(src="img/logo-footer.png")
+            .logo__descr
+              p Ecommerce OC Template
+          .social
+            ul.social__list
+              li.social__el
+                a(href="#").social__link
+                  i.fa.fa-twitter
+              li.social__el
+                a(href="#").social__link
+                  i.fa.fa-facebook
+              li.social__el
+                a(href="#").social__link
+                  i.fa.fa-youtube-play
+              li.social__el
+                a(href="#").social__link
+                  i.fa.fa-github
+              li.social__el
+                a(href="#").social__link
+                  i.fa.fa-behance
+        .footer__col
+          .vertical-list
+            h4.vertical-list__title my account
+            ul.vertical-list__item
+              el.vertical-list__el
+                a(href="#").vertical-list__link My account
+              el.vertical-list__el
+                a(href="#").vertical-list__link Order History
+              el.vertical-list__el
+                a(href="#").vertical-list__link Wish List
+              el.vertical-list__el
+                a(href="#").vertical-list__link Newsletter
+        .footer__col
+          .vertical-list
+            h4.vertical-list__title our service
+            ul.vertical-list__item
+              el.vertical-list__el
+                a(href="#").vertical-list__link Shipping Return
+              el.vertical-list__el
+                a(href="#").vertical-list__link Contact us
+              el.vertical-list__el
+                a(href="#").vertical-list__link Faq
+              el.vertical-list__el
+                a(href="#").vertical-list__link Affiliates
+              el.vertical-list__el
+                a(href="#").vertical-list__link Specials
+        .footer__col
+          .vertical-list
+            h4.vertical-list__title newsletter
+            ul.vertical-list__item
+              el.vertical-list__el
+                p Lorem ipsum dolor sit amet conseret adipiscing elit sed diam nonunem.
+              el.vertical-list__el
+                form.subscribe.subscribe_footer
+                  .subscribe__field
+                    input.input.input_small(placeholder="Your email")
+                  .subscribe__action
+                    button.btn.btn_small(type="submit")
+                      i.fa.fa-envelope
+      .owl-footer.container
+        .owl__item
+          a(href="#")
+            img(src="img/payment-1.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-2.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-4.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-3.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-5.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-6.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-8.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-7.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-2.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-3.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-4.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-5.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-6.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-8.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-7.png")
 
-	//END footer
-	//STAR copyright
-	.copyright
-		p Powered By
-			a(href="http://github.com/makecode")  Tony C.
-			| . Your Store © 2016
-	//END copyright
+  //END footer
+  //STAR copyright
+  .copyright
+    p Powered By
+      a(href="http://github.com/makecode")  Tony C.
+      | . Your Store © 2016
+  //END copyright

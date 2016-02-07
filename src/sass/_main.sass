@@ -95,6 +95,21 @@ body
     border: none
     background-color: $footerForm
 
+//price
+.price
+  font-family: "Roboto Slab"
+  font-weight: 300
+  &_xl
+    font-size: 38px
+  &_l
+    font-size: 31px
+  &_m
+    font-size: 17px
+  &_s
+    font-family: Roboto
+    font-size: 15px
+    font-weight: 400
+
 //buttons
 .btn
   display: inline-block
@@ -270,6 +285,7 @@ body
     display: inline-block
 
   &__el
+    position: relative
     display: inline-block
     border-right: 1px solid #333
     &:first-child
@@ -306,10 +322,14 @@ body
 
   &__dropdown
     position: absolute
+    top: 40px
+    left: 0
     padding: 14px 0
     background: $white
     border-radius: 2px
     display: none
+    white-space: nowrap
+    z-index: 50
 
     & span
       cursor: pointer
@@ -446,24 +466,25 @@ body
       &:hover
         color: $black
 
-  &_small
+//nav-small
+.nav-small
 
-    &__dropdown
-      display: none
-      border-radius: 0 0 2px 2px
+  &__dropdown
+    display: none
+    border-radius: 0 0 2px 2px
 
-      & li
-        width: 100%
-        background: $white
-        border-bottom: 1px solid #eee
-        &:hover
-          background: #f6f6f6
+    & li
+      width: 100%
+      background: $white
+      border-bottom: 1px solid #eee
+      &:hover
+        background: #f6f6f6
 
-      & a
-        padding: 10px 20px
-        display: block
-        color: $blackB
-        text-transform: uppercase
+    & a
+      padding: 10px 20px
+      display: block
+      color: $blackB
+      text-transform: uppercase
 
 //search
 .search
@@ -579,9 +600,6 @@ body
 
   &__color
     margin-left: 7px
-    font-family: Roboto Slab
-    font-weight: 300
-    font-size: 31px
     line-height: 54px
     vertical-align: top
     text-transform: none
@@ -747,7 +765,7 @@ body
     .product__top img
       opacity: 0.3
       border-bottom: 3px solid $orangeT
-      background: rgba(255, 255, 255, .70)
+      background: $white
     .product__btns
       display: block
 
@@ -1100,8 +1118,6 @@ body
       
   &__price
     padding-top: 3px
-    font-family: Roboto
-    font-size: 15px
     color: $greylight
 
     &_new
@@ -1277,8 +1293,6 @@ body
 
   &__price
     padding-top: 6px
-    font-family: "Roboto Slab"
-    font-size: 17px
 
 //discount
 .discount
@@ -1342,9 +1356,6 @@ body
     +r(1024)
       font-size: 30px
     & span
-      font-family: "Roboto Slab"
-      font-size: 38px
-      font-weight: 300
       color: $orangeNews
       vertical-align: top
       +r(1024)

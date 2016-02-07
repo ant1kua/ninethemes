@@ -1,294 +1,297 @@
 extends _layout
 
 block content
-    .container
-        .atom
-            .newsletter
-                .newsletter__in
-                    h2.newsletter__title NEWSLETTER
-                    p.newsletter__descr Did you know that we ship to over
-                        span 24 different countries
-                    form.subscribe
-                        .subscribe__field
-                            input.input.input__black(placeholder="Enter your email address")
-                        .subscribe__action
-                            button.btn.btn_square(type="submit")
-                                i.fa.fa-envelope
-                                | Subscribe
-                span.btn.btn_close &times;
+  .container
+    .atom
+      span.price $250.00
 
-        .atom
-            span.btn.btn_std
-                | shop now
+    .atom
+      .newsletter
+        .newsletter__in
+          h2.newsletter__title NEWSLETTER
+          p.newsletter__descr Did you know that we ship to over
+            span 24 different countries
+          form.subscribe
+            .subscribe__field
+              input.input.input__black(placeholder="Enter your email address")
+            .subscribe__action
+              button.btn.btn_square(type="submit")
+                i.fa.fa-envelope
+                | Subscribe
+        span.btn.btn_close &times;
 
-        .atom
-            a(href="#").btn_find
+    .atom
+      span.btn.btn_std
+        | shop now
 
-        .atom
-            .top-menu
-                .top-menu__left
-                    ul.top-menu__list
-                        li.top-menu__el
-                            a(href="#").top-menu__link us dollar
-                        li.top-menu__el
-                            a(href="#").top-menu__link english
-                .top-menu__right
-                    ul.top-menu__list
-                        li.top-menu__el
-                            a(href="#").top-menu__link my account
-                        li.top-menu__el
-                            a(href="#").top-menu__link my cart
-                                span.top-menu__count 0
-                        li.top-menu__el
-                            a(href="#").top-menu__link checkout
+    .atom
+      a(href="#").btn_find
 
-        .atom
-            .nav
-                ul.nav__list
-                    li.nav__el
-                        a.nav__link.nav__link_active home
-                    li.nav__el
-                        a.nav__link bikes
-                    li.nav__el
-                        a.nav__link clothing
-                    li.nav__el
-                        a.nav__link components
-                    li.nav__el
-                        a.nav__link accessories
-                    li.nav__el
-                        a.nav__link blog
-                    li.nav__el
-                        a.search
-                            i.search__ico.fa.fa-search
+    .atom
+      .top-menu
+        .top-menu__left
+          ul.top-menu__list
+            li.top-menu__el
+              a(href="#").top-menu__link us dollar
+            li.top-menu__el
+              a(href="#").top-menu__link english
+        .top-menu__right
+          ul.top-menu__list
+            li.top-menu__el
+              a(href="#").top-menu__link my account
+            li.top-menu__el
+              a(href="#").top-menu__link my cart
+                span.top-menu__count 0
+            li.top-menu__el
+              a(href="#").top-menu__link checkout
 
-        .atom
-            .nav_small
-                span.btn_nav
-                    i.fa.fa-reorder
-                    |navigation
+    .atom
+      .nav
+        ul.nav__list
+          li.nav__el
+            a.nav__link.nav__link_active home
+          li.nav__el
+            a.nav__link bikes
+          li.nav__el
+            a.nav__link clothing
+          li.nav__el
+            a.nav__link components
+          li.nav__el
+            a.nav__link accessories
+          li.nav__el
+            a.nav__link blog
+          li.nav__el
+            a.search
+              i.search__ico.fa.fa-search
 
-        .atom
-            .header
-                .header__in.container
-                    .header__left
-                        .logo
-                            a(href="#").logo__link
-                                img(src="/img/logo-goshop.png")
-                    .header__right
-                        nav.nav
-                            ul.nav__list
-                                li.nav__el
-                                    a.nav__link.nav__link_active home
-                                li.nav__el
-                                    a.nav__link bikes
-                                li.nav__el
-                                    a.nav__link clothing
-                                li.nav__el
-                                    a.nav__link components
-                                li.nav__el
-                                    a.nav__link accessories
-                                li.nav__el
-                                    a.nav__link blog
-                                li.nav__el
-                                    a.search
-                                        i.search__ico.fa.fa-search
+    .atom
+      .nav_small
+        span.btn_nav
+          i.fa.fa-reorder
+          | navigation
 
-        .atom
-            .promo
-                img(src="img/goshop-1.png").promo__img_big
-                .promo__big
-                    img(src="img/goshop-2.png").promo__img_
-                    .promo__small
-                        img(src="img/goshop-3.png").promo__img
-                .promo__btn
+    .atom
+      .header
+        .header__in.container
+          .header__left
+            .logo
+              a(href="#").logo__link
+                img(src="/img/logo-goshop.png")
+          .header__right
+            nav.nav
+              ul.nav__list
+                li.nav__el
+                  a.nav__link.nav__link_active home
+                li.nav__el
+                  a.nav__link bikes
+                li.nav__el
+                  a.nav__link clothing
+                li.nav__el
+                  a.nav__link components
+                li.nav__el
+                  a.nav__link accessories
+                li.nav__el
+                  a.nav__link blog
+                li.nav__el
+                  a.search
+                    i.search__ico.fa.fa-search
 
-        .atom
-            .title-section
-                h3.title-section__title choose your
-                    span.title-section__orange  bike
-                p Search by type of bike
+    .atom
+      .promo
+        img(src="img/goshop-1.png").promo__img_big
+        .promo__big
+          img(src="img/goshop-2.png").promo__img_
+          .promo__small
+            img(src="img/goshop-3.png").promo__img
+        .promo__btn
 
-        .atom
-            .filter
-                ul.filter__list
-                    li.filter__el
-                        a(href="#").filter__link.filter__link_active clothing
-                    li.filter__el
-                        a(href="#").filter__link bikes
-                    li.filter__el
-                        a(href="#").filter__link components
-                    li.filter__el
-                        a(href="#").filter__link accessories
-                    li.filter__el
-                        a(href="#").filter__link protections
+    .atom
+      .title-section
+        h3.title-section__title choose your
+          span.title-section__orange  bike
+        p Search by type of bike
 
-        .atom(style="background-color: #ccc")
+    .atom
+      .filter
+        ul.filter__list
+          li.filter__el
+            a(href="#").filter__link.filter__link_active clothing
+          li.filter__el
+            a(href="#").filter__link bikes
+          li.filter__el
+            a(href="#").filter__link components
+          li.filter__el
+            a(href="#").filter__link accessories
+          li.filter__el
+            a(href="#").filter__link protections
+
+    .atom(style="background-color: #ccc")
+      .btn-group
+        ul
+          li
+            span.btn.btn_white
+              i.fa.fa-exchange
+          li
+            span.btn.btn_white
+              i.fa.fa-heart
+          li
+            span.btn.btn_white
+              i.fa.fa-shopping-cart
+
+    .atom
+      //START product
+      .product
+        .product__top
+          a(href="#")
+            img(src="img/product-1.jpg")
+          .product__btns
             .btn-group
-                ul
-                    li
-                        span.btn.btn_white
-                            i.fa.fa-exchange
-                    li
-                        span.btn.btn_white
-                            i.fa.fa-heart
-                    li
-                        span.btn.btn_white
-                            i.fa.fa-shopping-cart
+              ul
+                li
+                  span.btn.btn_white
+                    i.fa.fa-exchange
+                li
+                  span.btn.btn_white
+                    i.fa.fa-heart
+                li
+                  span.btn.btn_white
+                    i.fa.fa-shopping-cart
+        .product__bottom
+          h4 apple cinema 30"
+          p
+            span.product__price.product__price_new $110.00
+            span.product__price.product__price_old $122.00
+      //END product
 
-        .atom
-            //START product
-            .product
-                .product__top
-                    a(href="#")
-                        img(src="img/product-1.jpg")
-                    .product__btns
-                        .btn-group
-                            ul
-                                li
-                                    span.btn.btn_white
-                                        i.fa.fa-exchange
-                                li
-                                    span.btn.btn_white
-                                        i.fa.fa-heart
-                                li
-                                    span.btn.btn_white
-                                        i.fa.fa-shopping-cart
-                .product__bottom
-                    h4 apple cinema 30"
-                    p
-                        span.product__price.product__price_new $110.00
-                        span.product__price.product__price_old $122.00
-            //END product
+    .atom(style="background: #141414")
+      .social
+        ul.social__list
+          li.social__el
+            a(href="#").social__link
+              i.fa.fa-twitter
+          li.social__el
+            a(href="#").social__link
+              i.fa.fa-facebook
+          li.social__el
+            a(href="#").social__link
+              i.fa.fa-youtube
+          li.social__el
+            a(href="#").social__link
+              i.fa.fa-github
+          li.social__el
+            a(href="#").social__link
+              i.fa.fa-behance
 
-        .atom(style="background: #141414")
-            .social
-                ul.social__list
-                    li.social__el
-                        a(href="#").social__link
-                            i.fa.fa-twitter
-                    li.social__el
-                        a(href="#").social__link
-                            i.fa.fa-facebook
-                    li.social__el
-                        a(href="#").social__link
-                            i.fa.fa-youtube
-                    li.social__el
-                        a(href="#").social__link
-                            i.fa.fa-github
-                    li.social__el
-                        a(href="#").social__link
-                            i.fa.fa-behance
+    .atom(style="background: #141414")
+      .vertical-list
+        h4.vertical-list__title my account
+        ul.vertical-list__item
+          el.vertical-list__el
+            a(href="#").vertical-list__link My account
+          el.vertical-list__el
+            a(href="#").vertical-list__link Order History
+          el.vertical-list__el
+            a(href="#").vertical-list__link Wish List
+          el.vertical-list__el
+            a(href="#").vertical-list__link Newsletter
 
-        .atom(style="background: #141414")
-            .vertical-list
-                h4.vertical-list__title my account
-                ul.vertical-list__item
-                    el.vertical-list__el
-                        a(href="#").vertical-list__link My account
-                    el.vertical-list__el
-                        a(href="#").vertical-list__link Order History
-                    el.vertical-list__el
-                        a(href="#").vertical-list__link Wish List
-                    el.vertical-list__el
-                        a(href="#").vertical-list__link Newsletter
+    .atom(style="background: #eee")
+      .owl-carousel.owl
+        .owl__item
+          a(href="#")
+            img(src="img/payment-1.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-2.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-4.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-3.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-5.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-6.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-8.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-7.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-2.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-3.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-4.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-5.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-6.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-8.png")
+        .owl__item
+          a(href="#")
+            img(src="img/payment-7.png")
 
-        .atom(style="background: #eee")
-            .owl-carousel.owl
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-1.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-2.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-4.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-3.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-5.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-6.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-8.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-7.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-2.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-3.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-4.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-5.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-6.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-8.png")
-                .owl__item
-                    a(href="#")
-                        img(src="img/payment-7.png")
+    .atom
+      .top-menu__lang
+        span.top-menu__eng
+          i.ico.ico_eng
+          | English
+        span.top-menu__pol
+          i.ico.ico_pol
+          | Polski
 
-        .atom
-            .top-menu__lang
-                span.top-menu__eng
-                    i.ico.ico_eng
-                    | English
-                span.top-menu__pol
-                    i.ico.ico_pol
-                    | Polski
-
-        .atom
-            .nav__dropdown
-                .nav__row
-                div
-                    a(href="#") cameras
-                    ul
-                        li Components
-                        li Mice and Trackballs
-                        li Monitors
-                        li Memory
-                        li Motherboard
-                        li Printers
-                        li PC
-                div
-                    a(href="#") phones
-                    ul
-                        li Scanners
-                        li Software
-                        li Test test
-                        li Laptops & Notebooks
-                        li PC
-                        li Mp3
-                        li Mac
-                div
-                    a(href="#") scanners
-                    ul
-                        li Softare
-                        li Test
-                        li Web-cameras
-                        li Windows
-                        li Test
-                        li PC
-                        li Printers
-                div
-                    a(href="#") software
-                    ul
-                        li Cameras
-                        li Components
-                        li Scanners
-                        li Software
-                        li Mice and Trackballs
-                        li Macs
-                        li Printers
+    .atom
+      .nav__dropdown
+        .nav__row
+        div
+          a(href="#") cameras
+          ul
+            li Components
+            li Mice and Trackballs
+            li Monitors
+            li Memory
+            li Motherboard
+            li Printers
+            li PC
+        div
+          a(href="#") phones
+          ul
+            li Scanners
+            li Software
+            li Test test
+            li Laptops & Notebooks
+            li PC
+            li Mp3
+            li Mac
+        div
+          a(href="#") scanners
+          ul
+            li Softare
+            li Test
+            li Web-cameras
+            li Windows
+            li Test
+            li PC
+            li Printers
+        div
+          a(href="#") software
+          ul
+            li Cameras
+            li Components
+            li Scanners
+            li Software
+            li Mice and Trackballs
+            li Macs
+            li Printers
