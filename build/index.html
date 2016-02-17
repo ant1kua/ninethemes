@@ -1,21 +1,767 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="theme-color" content="#fff">
-	<link rel="stylesheet" media="all" href="css/style.css" >
-	<script src="js/app.js"></script>
-</head>
-<body>
-<!-- BEGIN  out-->
-<div class="out">
-	<i class="icon-sepa"></i>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus, quod eum rerum molestiae consectetur inventore autem nisi mollitia sit at dolore quam aliquam ipsum. Hic, consequatur obcaecati facere. Consectetur.
-</div>
-<!-- END out-->
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Title of template</title>
+    <!-- Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Fonts-->
+    <link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Lato:800,700,600,500,400,300">
+    <link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Roboto+Slab:800,700,600,500,400,300">
+    <link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Roboto:800,700,600,500,400,300">
+    <link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Playball:800,700,600,500,400,300">
+    <!-- Style-->
+    <link rel="stylesheet" media="all" href="css/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <!-- Script-->
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <!--START popup-->
+      <div class="popup">
+        <div class="popup__bg"></div>
+        <div class="popup__in">
+          <div class="popup__content">
+            <div class="newsletter">
+              <div class="newsletter__in">
+                <h2 class="newsletter__title">NEWSLETTER</h2>
+                <p class="newsletter__descr">Did you know that we ship to over<span> 24 different countries</span></p>
+                <form class="subscribe">
+                  <div class="subscribe__field">
+                    <input placeholder="Enter your email address" class="input input_block">
+                  </div>
+                  <div class="subscribe__action">
+                    <button type="submit" class="btn btn_square"><i class="fa fa-envelope"></i>Subscribe</button>
+                  </div>
+                </form>
+              </div><span class="btn btn_close">&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--START popup-->
+      <!--START top-line-->
+      <div class="top-line">
+        <div class="top-menu container">
+          <div class="top-menu__left">
+            <ul class="top-menu__list">
+              <li class="top-menu__el"><a href="#" class="top-menu__link">us dollar</a>
+                <div class="top-menu__dropdown"><span>Euro</span><span>Pound Sterling</span><span>US Dollar</span></div>
+              </li>
+              <li class="top-menu__el"><a href="#" class="top-menu__link">english</a>
+                <div class="top-menu__dropdown"><span><i class="ico ico_eng"></i>English</span><span><i class="ico ico_pol"></i>Polski</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="top-menu__right">
+            <ul class="top-menu__list">
+              <li class="top-menu__el"><a href="#" class="top-menu__link">my account</a></li>
+              <li class="top-menu__el"><a href="#" class="top-menu__link">my cart<span class="top-menu__count">0</span></a>
+                <div class="top-menu__dropdown">
+                  <p>Your shopping cart is empty!</p>
+                </div>
+              </li>
+              <li class="top-menu__el"><a href="#" class="top-menu__link">checkout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--END top-line-->
+      <!--START header-->
+      <header class="header">
+        <div class="header__in container">
+          <div class="header__left">
+            <div class="logo"><a href="#" class="logo__link"><img src="img/logo-goshop.png"></a></div>
+          </div>
+          <div class="header__right">
+            <!--START nav-->
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__el"><a class="nav__link nav__link_active">home</a></li>
+                <li class="nav__el"><a class="nav__link">bikes</a>
+                  <div class="nav__dropdown">
+                    <div><a href="#">cameras</a>
+                      <ul>
+                        <li>Components</li>
+                        <li>Mice and Trackballs</li>
+                        <li>Monitors</li>
+                        <li>Memory</li>
+                        <li>Motherboard</li>
+                        <li>Printers</li>
+                        <li>PC</li>
+                      </ul>
+                    </div>
+                    <div><a href="#">phones</a>
+                      <ul>
+                        <li>Scanners</li>
+                        <li>Software</li>
+                        <li>Test test</li>
+                        <li>Laptops & Notebooks</li>
+                        <li>PC</li>
+                        <li>Mp3</li>
+                        <li>Mac</li>
+                      </ul>
+                    </div>
+                    <div><a href="#">scanners</a>
+                      <ul>
+                        <li>Softare</li>
+                        <li>Test</li>
+                        <li>Web-cameras</li>
+                        <li>Windows</li>
+                        <li>Test</li>
+                        <li>PC</li>
+                        <li>Printers</li>
+                      </ul>
+                    </div>
+                    <div><a href="#">software</a>
+                      <ul>
+                        <li>Cameras</li>
+                        <li>Components</li>
+                        <li>Scanners</li>
+                        <li>Software</li>
+                        <li>Mice and Trackballs</li>
+                        <li>Macs</li>
+                        <li>Printers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__el"><a class="nav__link">clothing</a></li>
+                <li class="nav__el"><a class="nav__link">components</a></li>
+                <li class="nav__el"><a class="nav__link">accessories</a></li>
+                <li class="nav__el"><a class="nav__link">blog</a></li>
+                <li class="nav__el"><a class="search"><i class="search__ico fa fa-search"></i></a></li>
+              </ul>
+            </nav>
+            <!--END nav-->
+            <!--START nav_small-->
+            <div class="nav-small"><span class="btn_nav"><i class="fa fa-reorder"></i>navigation</span>
+              <div class="nav-small__dropdown">
+                <ul>
+                  <li><a href="#">bikes</a></li>
+                  <li><a href="#">clothing</a></li>
+                  <li><a href="#">components</a></li>
+                  <li><a href="#">accessories</a></li>
+                  <li><a href="#">blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--END nav_small-->
+          </div>
+        </div>
+        <!--START promo-->
+        <div class="promo">
+          <div class="promo__big"><img src="img/goshop-2.png" class="promo__img">
+            <div class="promo__small"><img src="img/goshop-3.png" class="promo__img"></div>
+          </div>
+          <div class="promo__btn"><a href="#" class="promo__link"></a></div>
+        </div>
+        <!--END promo-->
+        <!--START promo-item-->
+        <div class="promo-item">
+          <div class="promo-item__el"><img src="img/banner-01.png" class="promo-item__img">
+            <div class="promo-item__descr promo-item__descr_right">
+              <h3 class="promo-item__title">men<span class="price price_l promo-item__color promo-item__color_one">$350</span></h3>
+              <p>Bikes, Clothing, and many more...</p><span class="btn btn_std">shop now</span>
+            </div>
+          </div>
+          <div class="promo-item__el"><img src="img/banner-02.png" class="promo-item__img">
+            <div class="promo-item__descr promo-item__descr_center">
+              <h3 class="promo-item__title">women<span class="price price_l promo-item__color promo-item__color_two">$250</span></h3>
+              <p>Bikes, Clothing, Accessories and many more...</p><span class="btn btn_std">shop now</span>
+            </div>
+          </div>
+          <div class="promo-item__el"><img src="img/banner-03.png" class="promo-item__img">
+            <div class="promo-item__descr promo-item__descr_left">
+              <h3 class="promo-item__title promo-item__color_three">bike's<span class="price price_l promo-item__color promo-item__color_one">$550</span></h3>
+              <p class="promo-item__color_four">All Famous Bike Brand Only for you...</p><span class="btn btn_std">shop now</span>
+            </div>
+          </div>
+        </div>
+        <!--END promo-item-->
+        
+      </header>
+      <!--END header-->
+      <!--START main-->
+      <main class="main">
+        <!--START choose-bike-->
+        <section class="choose-bike">
+          <div class="title-section">
+            <h3 class="title-section__title">choose your<span class="title-section__orange"> bike</span></h3>
+            <p>Search by type of bike</p>
+          </div>
+          <div class="choose-bike__in container">
+            <ul class="choose-bike__round">
+              <li class="choose-bike__item">
+                <div class="choose-bike__img"><img src="img/bike-1.png"></div><a href="#">
+                  <p class="choose-bike__title">bmx bikes</p></a>
+                <p class="choose-bike__price">Start from<span class="price price_s"> $399.00</span></p>
+              </li>
+              <li class="choose-bike__item">
+                <div class="choose-bike__img"><img src="img/bike-2.png"></div><a href="#">
+                  <p class="choose-bike__title">mountain bikes</p></a>
+                <p class="choose-bike__price">Start from<span class="price price_s"> $599.00</span></p>
+              </li>
+              <li class="choose-bike__item">
+                <div class="choose-bike__img"><img src="img/bike-3.png"></div><a href="#">
+                  <p class="choose-bike__title">road bikes</p></a>
+                <p class="choose-bike__price">Start from<span class="price price_s"> $299.00</span></p>
+              </li>
+            </ul><span class="choose-bike__buttons"><span class="choose-bike__btn choose-bike__btn_prev"><i class="fa fa-angle-left"></i></span><span class="choose-bike__btn choose-bike__btn_next"><i class="fa fa-angle-right"></i></span></span>
+            <div class="choose-bike__link"><a href="#" class="btn btn_std">view all bikes</a></div>
+          </div>
+        </section>
+        <!--END choose-bike-->
+        <!--START discount-->
+        <section class="discount">
+          <div class="discount__center">
+            <p>discount up to 75%</p>
+          </div>
+          <div class="discount__left">
+            <div class="discount__info discount__info_right">
+              <h5 class="discount__name">Waterproof Jacket</h5>
+              <p class="discount__big">MEN<span class="price price_xl"> $350</span></p>
+              <ul class="discount__details">
+                <li>Integrated i-Lume LED rear light</li>
+                <li>Optional hood available separately</li>
+                <li>Breathability rating 15,000</li>
+              </ul>
+              <ul class="discount__buttons">
+                <li><span>detail</span></li>
+                <li><span>add to cart</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="discount__right">
+            <div class="discount__info">
+              <h5 class="discount__name">Waterproof Jacket</h5>
+              <p class="discount__big">WOMEN<span class="price price_xl"> $350</span></p>
+              <ul class="discount__details">
+                <li>Integrated i-Lume LED rear light</li>
+                <li>Optional hood available separately</li>
+                <li>Breathability rating 15,000</li>
+              </ul>
+              <ul class="discount__buttons">
+                <li><span>detail</span></li>
+                <li><span>add to cart</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--END DISCOUNT-->
+        <!--START new-goods-->
+        <section class="new-goods">
+          <!--START title-section-->
+          <div class="title-section">
+            <h3 class="title-section__title"><span class="title-section__orange">new</span>arrivals</h3>
+            <p>Trending products</p>
+          </div>
+          <!--END title-section-->
+          <!--START filter-->
+          <div class="filter">
+            <ul class="filter__list">
+              <li class="filter__el"><a href="#" class="filter__link filter__link_active">clothing</a></li>
+              <li class="filter__el"><a href="#" class="filter__link">bikes</a></li>
+              <li class="filter__el"><a href="#" class="filter__link">components</a></li>
+              <li class="filter__el"><a href="#" class="filter__link">accessories</a></li>
+              <li class="filter__el"><a href="#" class="filter__link">protections</a></li>
+            </ul>
+          </div>
+          <!--END filter-->
+          <!--START products-->
+          <div class="products">
+            <ul class="products__list">
+              <li class="products__el">
+                <!--START product-->
+                <div class="product">
+                  <div class="product__top"><a href="#"><img src="img/product-1.jpg"></a>
+                    <div class="product__btns">
+                      <div class="btn-group">
+                        <ul>
+                          <li><span class="btn btn_white"><i class="fa fa-exchange"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-heart"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-shopping-cart"></i></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__bottom">
+                    <h4>apple cinema 30"</h4>
+                    <p><span class="price price_s product__price product__price_new">$110.00</span><span class="price price_s product__price product__price_old">$122.00</span></p>
+                  </div>
+                </div>
+                <!--END product-->
+              </li>
+              <li class="products__el">
+                <!--START product-->
+                <div class="product">
+                  <div class="product__top"><a href="#"><img src="img/product-2.jpg"></a>
+                    <div class="product__btns">
+                      <div class="btn-group">
+                        <ul>
+                          <li><span class="btn btn_white"><i class="fa fa-exchange"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-heart"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-shopping-cart"></i></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__bottom">
+                    <h4>hp lp3065</h4>
+                    <p><span class="price price_s product__price product__price_new">$122.00</span></p>
+                  </div>
+                </div>
+                <!--END product-->
+              </li>
+              <li class="products__el">
+                <!--START product-->
+                <div class="product">
+                  <div class="product__top"><a href="#"><img src="img/product-3.jpg"></a>
+                    <div class="product__btns">
+                      <div class="btn-group">
+                        <ul>
+                          <li><span class="btn btn_white"><i class="fa fa-exchange"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-heart"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-shopping-cart"></i></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__bottom">
+                    <h4>palm treo pro</h4>
+                    <p><span class="price price_s product__price product__price_new">$337.99</span></p>
+                  </div>
+                </div>
+                <!--END product-->
+              </li>
+              <li class="products__el">
+                <!--START product-->
+                <div class="product">
+                  <div class="product__top"><a href="#"><img src="img/product-4.jpg"></a>
+                    <div class="product__btns">
+                      <div class="btn-group">
+                        <ul>
+                          <li><span class="btn btn_white"><i class="fa fa-exchange"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-heart"></i></span></li>
+                          <li><span class="btn btn_white"><i class="fa fa-shopping-cart"></i></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__bottom">
+                    <h4>canon eos 5d</h4>
+                    <p><span class="price price_s product__price product__price_new">$98.00</span><span class="price price_s product__price product__price_old">$122.00</span></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--END products-->
+        </section>
+        <!--END new-goods-->
+        <!--START featured-->
+        <section class="featured">
+          <div class="title-section">
+            <h3 class="title-section__title">featured products</h3>
+            <p>Our featured products here</p>
+          </div>
+          <div class="featured__in">
+            <div class="featured__item">
+              <div class="featured__img"><img src="img/featured-product-1.png"></div>
+              <div class="featured__descr">
+                <div class="featured__info"><span class="btn btn_cart"><i class="fa fa-shopping-cart"></i></span>
+                  <p class="featured__brand">Cycling Shoes</p><a href="#" class="featured__model">sidebike m065 pro</a>
+                  <p class="featured__price"><span class="price price_m">$250.00</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__img"><img src="img/featured-product-2.png"></div>
+              <div class="featured__descr">
+                <div class="featured__info"><span class="btn btn_cart"><i class="fa fa-shopping-cart"></i></span>
+                  <p class="featured__brand">Cycling Shoes</p><a href="#" class="featured__model">sidebike m065 pro</a>
+                  <p class="featured__price"><span class="price price_m">$250.00</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__img"><img src="img/featured-product-3.png"></div>
+              <div class="featured__descr">
+                <div class="featured__info"><span class="btn btn_cart"><i class="fa fa-shopping-cart"></i></span>
+                  <p class="featured__brand">Cycling Shoes</p><a href="#" class="featured__model">sidebike m065 pro</a>
+                  <p class="featured__price"><span class="price price_m">$250.00</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__img"><img src="img/featured-product-4.png"></div>
+              <div class="featured__descr">
+                <div class="featured__info"><span class="btn btn_cart"><i class="fa fa-shopping-cart"></i></span>
+                  <p class="featured__brand">Cycling Shoes</p><a href="#" class="featured__model">sidebike m065 pro</a>
+                  <p class="featured__price"><span class="price price_m">$250.00</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__img"><img src="img/featured-product-5.png"></div>
+              <div class="featured__descr">
+                <div class="featured__info"><span class="btn btn_cart"><i class="fa fa-shopping-cart"></i></span>
+                  <p class="featured__brand">Cycling Shoes</p><a href="#" class="featured__model">sidebike m065 pro</a>
+                  <p class="featured__price"><span class="price price_m">$250.00</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__img"><img src="img/featured-product-6.png"></div>
+              <div class="featured__descr">
+                <div class="featured__info"><span class="btn btn_cart"><i class="fa fa-shopping-cart"></i></span>
+                  <p class="featured__brand">Cycling Shoes</p><a href="#" class="featured__model">sidebike m065 pro</a>
+                  <p class="featured__price"><span class="price price_m">$250.00</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__img"><img src="img/featured-product-7.png"></div>
+              <div class="featured__descr">
+                <div class="featured__info"><span class="btn btn_cart"><i class="fa fa-shopping-cart"></i></span>
+                  <p class="featured__brand">Cycling Shoes</p><a href="#" class="featured__model">sidebike m065 pro</a>
+                  <p class="featured__price"><span class="price price_m">$250.00</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END featured-->
+        <!--START found-bike-->
+        <section class="found-bike">
+          <div class="found-bike__in container">
+            <div class="found-bike__left">
+              <p class="found-bike__header">Found your<span> Dream Bike</span>? Why wait</p>
+              <p class="found-bike__descr">Get it now with a 0% finance deal from GoShop Fashion..</p>
+            </div>
+            <div class="found-bike__right"><span class="btn btn_bg-none btn_big">discover</span><span class="btn btn_std btn_big">purchase</span></div>
+          </div>
+        </section>
+        <!--END found-bike-->
+        <!--START limited-->
+        <section class="limited">
+          <div class="title-section">
+            <h3 class="title-section__title">carbon fiber<span class="title-section__orange"> cervello</span></h3>
+            <p>Limited time offer only on Go Shop</p>
+          </div>
+          <div class="limited__countdown">
+            <div class="countdown"></div>
+          </div>
+          <div class="limited__btn"><span class="btn btn_std">add to cart</span></div>
+        </section>
+        <!--END limited-->
+        <!--START reviews-->
+        <section class="reviews">
+          <div class="reviews__in container">
+            <div class="owl-reviews">
+              <div class="reviews__item">
+                <h2 class="reviews__title">they says</h2>
+                <p class="reviews__second-title">Happy clients</p>
+                <p class="reviews__quote">"Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”</p>
+                <p class="reviews__sig"><span>jesica wilson</span> - France</p>
+              </div>
+              <div class="reviews__item">
+                <h2 class="reviews__title">they says</h2>
+                <p class="reviews__second-title">Happy clients</p>
+                <p class="reviews__quote">"Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”</p>
+                <p class="reviews__sig"><span>artur</span> - Franc e</p>
+              </div>
+              <div class="reviews__item">
+                <h2 class="reviews__title">they says</h2>
+                <p class="reviews__second-title">Happy clients</p>
+                <p class="reviews__quote">"Cycling is a healthy, fun and exciting way to travel. No matter what type of cycling you’re into, we’ve got a bike for you. We stock one of the largest bicycle ranges anywhere”</p>
+                <p class="reviews__sig"><span>nine-thmes</span> - France</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END reviews-->
+        <!--START offers-->
+        <section class="offers container">
+          <div class="title-section">
+            <h3 class="title-section__title">special offers</h3>
+            <p>Special price only this month</p>
+          </div>
+          <ul class="offers__list">
+            <li class="offers__el">
+              <div class="offers__item">
+                <div class="offers__left"><a href="#"><img src="img/product-1-xs.png"></a></div>
+                <div class="offers__right">
+                  <p class="offers__title">Mountian bike</p>
+                  <p><a class="offers__model">gt sensor comp 27.5</a></p>
+                  <p class="offers__price">Price:<span class="offers__price_new price price_s"> $299.00</span>
+                    <s><span class="price price_s">$599.00</span></s>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="offers__el">
+              <div class="offers__item">
+                <div class="offers__left"><a href="#"><img src="img/product-2-xs.png"></a></div>
+                <div class="offers__right">
+                  <p class="offers__title">Mountian bike</p>
+                  <p><a class="offers__model">breezer squall 1.0</a></p>
+                  <p class="offers__price">Price:<span class="offers__price_new price price_s"> $299.00</span>
+                    <s><span class="price price_s">$599.00</span></s>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="offers__el">
+              <div class="offers__item">
+                <div class="offers__left"><a href="#"><img src="img/product-3-xs.png"></a></div>
+                <div class="offers__right">
+                  <p class="offers__title">Mountian bike</p>
+                  <p><a class="offers__model">gt sensor comp 27.5</a></p>
+                  <p class="offers__price">Price:<span class="offers__price_new price price_s"> $299.00</span>
+                    <s><span class="price price_s">$599.00</span></s>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="offers__el">
+              <div class="offers__item">
+                <div class="offers__left"><a href="#"><img src="img/product-3-xs.png"></a></div>
+                <div class="offers__right">
+                  <p class="offers__title">Mountian bike</p>
+                  <p><a class="offers__model">gt sensor comp 27.5</a></p>
+                  <p class="offers__price">Price:<span class="offers__price_new price price_s"> $299.00</span>
+                    <s><span class="price price_s">$599.00</span></s>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="offers__el">
+              <div class="offers__item">
+                <div class="offers__left"><a href="#"><img src="img/product-1-xs.png"></a></div>
+                <div class="offers__right">
+                  <p class="offers__title">Mountian bike</p>
+                  <p><a class="offers__model">breezer squall 1.0</a></p>
+                  <p class="offers__price">Price:<span class="offers__price_new price price_s"> $299.00</span>
+                    <s><span class="price price_s">$599.00</span></s>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="offers__el">
+              <div class="offers__item">
+                <div class="offers__left"><a href="#"><img src="img/product-2-xs.png"></a></div>
+                <div class="offers__right">
+                  <p class="offers__title">Mountian bike</p>
+                  <p><a class="offers__model">gt sensor comp 27.5</a></p>
+                  <p class="offers__price">Price:<span class="offers__price_new price price_s"> $299.00</span>
+                    <s><span class="price price_s">$599.00</span></s>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--END offers-->
+        <!--START news-->
+        <section class="news">
+          <div class="title-section">
+            <h3 class="title-section__title">latest news</h3>
+            <p>News from our blog</p>
+          </div>
+          <ul class="news__list container">
+            <li class="news__el">
+              <div class="news__item">
+                <div class="news__left">
+                  <div class="news__date">
+                    <p class="news__big">16</p>
+                    <p class="news__small">sep</p>
+                  </div>
+                  <div class="news__count">
+                    <p class="news__big"><i class="fa fa-comments"></i></p>
+                    <p class="news__small">3</p>
+                  </div>
+                </div>
+                <div class="news__right">
+                  <div class="news__tags">
+                    <ul>
+                      <li>Fastor</li>
+                      <li>Beatiful</li>
+                    </ul>
+                  </div>
+                  <div class="news__title"><a href="#">Donec ut nunc sit amet urna aliquet</a></div>
+                  <div class="news__bottom"><span class="news__more">read more &rarr;</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="news__el">
+              <div class="news__item">
+                <div class="news__left">
+                  <div class="news__date">
+                    <p class="news__big">16</p>
+                    <p class="news__small">sep</p>
+                  </div>
+                  <div class="news__count">
+                    <p class="news__big"><i class="fa fa-comments"></i></p>
+                    <p class="news__small">1</p>
+                  </div>
+                </div>
+                <div class="news__right">
+                  <div class="news__tags">
+                    <ul>
+                      <li>Fastor</li>
+                      <li>Buy it</li>
+                    </ul>
+                  </div>
+                  <div class="news__title"><a href="#">Nulla dictum consequat lorem ac vehicula</a></div>
+                  <div class="news__bottom"><span class="news__more">read more &rarr;</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="news__el">
+              <div class="news__item">
+                <div class="news__left">
+                  <div class="news__date">
+                    <p class="news__big">12</p>
+                    <p class="news__small">sep</p>
+                  </div>
+                  <div class="news__count">
+                    <p class="news__big"><i class="fa fa-comments"></i></p>
+                    <p class="news__small">0</p>
+                  </div>
+                </div>
+                <div class="news__right">
+                  <div class="news__tags">
+                    <ul>
+                      <li>Fastor</li>
+                      <li>Passion</li>
+                    </ul>
+                  </div>
+                  <div class="news__title"><a href="#">Etiam ac aliquet ex nec volutpat orci</a></div>
+                  <div class="news__bottom"><span class="news__more">read more &rarr;</span></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--END news-->
+        <!--START contacts-->
+        <section class="contacts">
+          <div class="contacts__box"><img src="img/logo-footer.png" alt="logo" class="contacts__logo">
+            <p>148 Parramatta Road Stanmore NSW 2048, New York City</p>
+            <p>Call Sales & Workshop : (02) 9567 1999</p><img src="img/bg-footer-title.png" alt="">
+            <h3>opening hours</h3>
+            <p>Monday to Wednesday from 10.00AM - 17.00PM</p>
+            <p>Thursday to Sunday from 11.00AM - 19.00PM</p>
+          </div>
+          <div class="partners">
+            <div class="partners__in container">
+              <ul class="partners__list">
+                <li class="partners__el"><a href=""><img src="img/partner-1.png" class="partners__img"></a></li>
+                <li class="partners__el"><a href=""><img src="img/partner-2.png" class="partners__img"></a></li>
+                <li class="partners__el"><a href=""><img src="img/partner-3.png" class="partners__img"></a></li>
+                <li class="partners__el"><a href=""><img src="img/partner-4.png" class="partners__img"></a></li>
+                <li class="partners__el"><a href=""><img src="img/partner-5.png" class="partners__img"></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--END contacts-->
+      </main>
+      <!--END main-->
+      <!--START footer-->
+      <footer class="footer">
+        <div class="footer__in container">
+          <div class="footer__row">
+            <div class="footer__col">
+              <div class="logo"><a href="#" class="logo__link"><img src="img/logo-footer.png"></a>
+                <div class="logo__descr">
+                  <p>Ecommerce OC Template</p>
+                </div>
+              </div>
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__el"><a href="#" class="social__link"><i class="fa fa-twitter"></i></a></li>
+                  <li class="social__el"><a href="#" class="social__link"><i class="fa fa-facebook"></i></a></li>
+                  <li class="social__el"><a href="#" class="social__link"><i class="fa fa-youtube-play"></i></a></li>
+                  <li class="social__el"><a href="#" class="social__link"><i class="fa fa-github"></i></a></li>
+                  <li class="social__el"><a href="#" class="social__link"><i class="fa fa-behance"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="vertical-list">
+                <h4 class="vertical-list__title">my account</h4>
+                <ul class="vertical-list__item">
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">My account</a></el>
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Order History</a></el>
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Wish List</a></el>
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Newsletter</a></el>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="vertical-list">
+                <h4 class="vertical-list__title">our service</h4>
+                <ul class="vertical-list__item">
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Shipping Return</a></el>
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Contact us</a></el>
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Faq</a></el>
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Affiliates</a></el>
+                  <el class="vertical-list__el"><a href="#" class="vertical-list__link">Specials</a></el>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="vertical-list">
+                <h4 class="vertical-list__title">newsletter</h4>
+                <ul class="vertical-list__item">
+                  <el class="vertical-list__el">
+                    <p>Lorem ipsum dolor sit amet conseret adipiscing elit sed diam nonunem.</p>
+                  </el>
+                  <el class="vertical-list__el">
+                    <form class="subscribe subscribe_footer">
+                      <div class="subscribe__field">
+                        <input placeholder="Your email" class="input input_small">
+                      </div>
+                      <div class="subscribe__action">
+                        <button type="submit" class="btn btn_small"><i class="fa fa-envelope"></i></button>
+                      </div>
+                    </form>
+                  </el>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="owl-footer container">
+            <div class="owl__item"><a href="#"><img src="img/payment-1.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-2.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-4.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-3.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-5.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-6.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-8.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-7.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-2.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-3.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-4.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-5.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-6.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-8.png"></a></div>
+            <div class="owl__item"><a href="#"><img src="img/payment-7.png"></a></div>
+          </div>
+        </div>
+      </footer>
+      <!--END footer-->
+      <!--STAR copyright-->
+      <div class="copyright">
+        <p>Powered By<a href="http://github.com/makecode"> Tony C.</a>. Your Store © 2016</p>
+      </div>
+      <!--END copyright-->
+    </div>
+    <!--END out-->
+  </body>
 </html>
